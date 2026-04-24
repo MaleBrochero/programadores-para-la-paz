@@ -1,0 +1,12 @@
+El uso responsable de la información en internet implica verificar fuentes, 
+respetar derechos de autor y comunicar con ética, lo cual es fundamental
+para una participación ciudadana informada y crítica. Cuando las personas
+acceden y comparten información confiable, pueden tomar decisiones más conscientes
+y aportar al debate público de manera constructiva. A su vez, la organización del
+trabajo técnico con herramientas como Git fomenta la transparencia, la trazabilidad 
+y la colaboración entre equipos. Estas mismas prácticas fortalecen valores ciudadanos
+como la responsabilidad, el respeto por el trabajo ajeno y la rendición de cuentas. 
+Así, tanto en el ámbito digital como en el social, se promueve una cultura de cooperación
+y confianza. Además, Git permite documentar cambios y procesos, lo que facilita el aprendizaje
+colectivo y la mejora continua. En conjunto, estos elementos reflejan la importancia de actuar
+de manera ética, organizada y participativa en entornos digitales y sociales.
