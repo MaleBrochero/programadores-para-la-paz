@@ -1,0 +1,5 @@
+Repositorio: Es un espacio de almacenamiento donde se guardan todos los archivos de un proyecto, junto con el historial completo de los cambios realizados. Permite que varios desarrolladores colaboren y mantengan versiones organizadas del cdigo.
+
+Commit: Es una instantnea o registro de los cambios realizados en el proyecto en un momento especfico. Cada commit incluye un mensaje descriptivo y un identificador nico, lo que permite volver a versiones anteriores si es necesario.
+
+Push: Es el comando que se utiliza para enviar los cambios registrados localmente (commits) a un repositorio remoto, como GitHub. Esto permite que el trabajo est disponible para otros colaboradores y que se mantenga una copia de seguridad en la nube.
