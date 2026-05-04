@@ -1,11 +1,11 @@
-Pregunta 1:
-Respuesta: B
+Pregunta 1: Cul es la funcin principal de la terminal en un sistema operativo?
+Respuesta: B) Ejecutar comandos para interactuar con el sistema
 
-Pregunta 2:
-Respuesta: B
+Pregunta 2: Qu hace el comando pwd?
+Respuesta: B) Muestra la ubicacin actual dentro del sistema de carpetas
 
-Pregunta 3:
-Respuesta: C
+Pregunta 3: Cul comando permite ver los archivos y carpetas dentro del directorio actual?
+Respuesta: C) ls
 
-Pregunta 4:
-Respuesta: B
+Pregunta 4: Cul comando permite crear una carpeta nueva desde la terminal?
+Respuesta: B) mkdir
