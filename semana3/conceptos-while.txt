@@ -1,0 +1,47 @@
+Conceptos básicos de while – Semana 3 Día 3
+
+Nombre del estudiante: Maria Brochero
+Fecha: 04/05/2026
+Nombre de la rama: maria_brochero
+
+Responde con tus propias palabras.
+
+1. ¿Qué significa repetir instrucciones en programación?
+
+Respuesta: Significa ejecutar el mismo bloque de código varias veces sin tener que escribirlo de nuevo manualmente, lo que permite automatizar tareas y hacer el código más eficiente.
+
+2. ¿Qué es un ciclo while?
+
+Respuesta: Es una estructura de control que permite repetir un conjunto de instrucciones mientras una condición específica se mantenga como verdadera (true).
+
+3. ¿Qué significa la condición dentro de un while?
+
+Respuesta: Es la regla o expresión lógica que determina si el ciclo debe continuar ejecutándose o si debe detenerse cuando la condición ya no se cumpla.
+
+4. ¿Por qué es importante cambiar una variable dentro del while?
+
+Respuesta: Es crucial para asegurar que la condición del ciclo eventualmente cambie a falsa; de lo contrario, el programa se quedaría atrapado en un ciclo infinito.
+
+5. ¿Qué es un ciclo infinito?
+
+Respuesta: Es una situación donde el ciclo nunca termina porque su condición siempre es verdadera, lo cual puede agotar los recursos del sistema y bloquear la aplicación.
+
+6. ¿Qué hace el comando npm run practicar?
+
+Respuesta: Ejecuta un script personalizado definido en el archivo package.json, que en este caso sirve para iniciar la ejecución del archivo ciclo-while.js.
+
+7. ¿Dónde está definido el comando practicar?
+
+Respuesta: Se encuentra dentro del archivo package.json, específicamente en la sección de "scripts".
+
+8. ¿Qué diferencia hay entre node archivo.js y npm run practicar?
+
+Respuesta: node archivo.js ejecuta el archivo de forma directa, mientras que npm run practicar usa una instrucción preconfigurada que puede agrupar varios comandos o configuraciones.
+
+9. ¿Cómo puede servir un while para revisar varias fuentes de información?
+
+Respuesta: Permite recorrer una por una todas las fuentes disponibles de forma automática hasta completar la lista, asegurando una verificación exhaustiva antes de validar un dato.
+
+10. ¿Cómo puede relacionarse un ciclo con el seguimiento de propuestas comunitarias?
+
+Respuesta: Se utiliza para realizar revisiones periódicas o acumulativas del estado de las propuestas a lo largo del tiempo, facilitando el conteo y la actualización de los progresos de forma constante.

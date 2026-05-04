@@ -1,0 +1,58 @@
+Bitácora de comando – Semana 3 Día 3
+
+Nombre del estudiante: Maria Brochero
+Fecha: 04/05/2026
+Nombre de la rama: maria_brochero
+
+Comando nuevo del día:
+npm run practicar
+
+Escribe los comandos que usaste durante la práctica.
+
+1. Comando usado para clonar el repositorio:
+
+Respuesta: git clone https://github.com/mmgranda/programadores-para-la-paz-semana3-dia3.git
+
+2. Comando usado para entrar a la carpeta del proyecto:
+
+Respuesta: cd programadores-para-la-paz-semana3-dia3
+
+3. Comando usado para crear tu rama personal:
+
+Respuesta: git checkout -b maria_brochero
+
+4. Comando usado para verificar la rama:
+
+Respuesta: git branch
+
+5. Comando nuevo usado para ejecutar ciclo-while.js desde package.json:
+
+Respuesta: npm run practicar
+
+6. Comando usado para ejecutar conteo-propuestas.js:
+
+Respuesta: node conteo-propuestas.js
+
+7. Comando usado para ejecutar revision-fuentes.js:
+
+Respuesta: node revision-fuentes.js
+
+8. Comando usado para ejecutar seguimiento-comunitario.js:
+
+Respuesta: node seguimiento-comunitario.js
+
+9. Comando usado para revisar cambios en Git:
+
+Respuesta: git status
+
+10. Comando usado para agregar cambios:
+
+Respuesta: git add .
+
+11. Comando usado para crear commit:
+
+Respuesta: git commit -m "Ciclos while en JavaScript semana 3 dia 3"
+
+12. Comando usado para publicar la rama:
+
+Respuesta: git push -u origin maria_brochero
