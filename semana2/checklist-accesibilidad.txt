@@ -1,0 +1,35 @@
+Checklist de accesibilidad – Formulario Participa
+
+Nombre del estudiante: Maria Leal Brochero
+Fecha: 04/05/2026
+Nombre de la rama: maria_leal_brochero
+
+1. ¿El formulario tiene un título claro?
+Respuesta: Sí, cuenta con el título "Formulario Participa" visible y etiquetado con <h1> para jerarquía semántica.
+
+2. ¿El formulario explica para qué se usará la información?
+Respuesta: Sí, el texto de introducción detalla que la información se usará exclusivamente para fines de organización comunitaria.
+
+3. ¿Cada campo tiene un label o etiqueta visible?
+Respuesta: Sí, todos los campos de entrada tienen su etiqueta <label> correspondiente vinculada mediante el ID.
+
+4. ¿El lenguaje usado es sencillo y comprensible?
+Respuesta: Sí, se ha redactado de forma directa y clara, evitando tecnicismos para que cualquier persona pueda participar.
+
+5. ¿El formulario evita pedir datos innecesarios?
+Respuesta: Sí, solo pide el nombre, la propuesta y un contacto opcional, respetando la privacidad del usuario.
+
+6. ¿El campo principal permite escribir una propuesta o mensaje de forma clara?
+Respuesta: Sí, utiliza un elemento <textarea> que ofrece suficiente espacio para redactar ideas detalladas.
+
+7. ¿El formulario incluye una casilla o mensaje de consentimiento?
+Respuesta: Sí, incluye un checkbox obligatorio para que el usuario acepte el tratamiento de sus datos.
+
+8. ¿El botón de envío tiene un texto claro?
+Respuesta: Sí, el botón indica "Enviar Participación", lo que describe perfectamente la acción a realizar.
+
+9. ¿La página se puede leer con facilidad?
+Respuesta: Sí, se ha mejorado el contraste y la tipografía (Outfit) para facilitar la lectura en diferentes dispositivos.
+
+10. ¿Qué mejorarías del formulario para que más personas puedan usarlo?
+Respuesta: Implementaría validaciones en tiempo real con mensajes de error accesibles para lectores de pantalla y aseguraría un enfoque de foco claro para navegación por teclado.

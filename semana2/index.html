@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participa - Comunidad en Acción</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <section class="contenedor">
+      <header class="encabezado">
+        <h1>Formulario Participa</h1>
+        <p class="descripcion">
+          Tu voz es el motor de nuestro cambio. Este espacio permite recoger tus propuestas e ideas para fortalecer nuestra comunidad.
+        </p>
+        <div class="aviso-privacidad">
+          <small>La información será tratada con transparencia y fines organizativos.</small>
+        </div>
+      </header>
+
+      <form id="form-participa">
+        <div class="campo">
+          <label for="nombre">Nombre Completo</label>
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            placeholder="Ej. Maria Leal Brochero"
+            required>
+        </div>
+
+        <div class="campo">
+          <label for="propuesta">Tu Propuesta o Mensaje</label>
+          <textarea 
+            id="propuesta" 
+            name="propuesta" 
+            placeholder="Describe tu idea con claridad..."
+            required></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="contacto">Contacto (Opcional)</label>
+          <input 
+            type="text" 
+            id="contacto" 
+            name="contacto" 
+            placeholder="Correo o teléfono">
+        </div>
+
+        <div class="campo-check">
+          <label class="checkbox-container">
+            <input type="checkbox" name="consentimiento" required>
+            <span class="checkmark"></span>
+            Acepto el uso responsable de mi información para fines comunitarios.
+          </label>
+        </div>
+
+        <button type="submit" class="btn-enviar">
+          <span>Enviar Participación</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
