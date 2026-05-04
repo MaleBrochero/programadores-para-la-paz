@@ -1,9 +1,9 @@
-Mantener un registro de cambios mediante herramientas como Git es crucial para el desarrollo de software porque garantiza la trazabilidad y la seguridad del cdigo. 
-Permite que los desarrolladores comprendan la evolucin del proyecto, sabiendo quin realiz cada modificacin, cundo y por qu razn. 
-Esta visibilidad es fundamental para detectar errores y revertir el proyecto a un estado estable en caso de fallos crticos. 
-Adems, Git facilita enormemente el trabajo en equipo, evitando que los cambios de un programador sobrescriban accidentalmente los de otro mediante el uso de ramas y fusiones. 
-Sin un sistema de control de versiones, la colaboracin sera catica y el riesgo de perder trabajo valioso sera extremadamente alto. 
-Tambin sirve como una documentacin histrica del desarrollo, lo que ayuda a nuevos integrantes a entender el contexto de las decisiones tcnicas tomadas. 
-En proyectos grandes, la capacidad de experimentar con nuevas funcionalidades en ramas separadas sin afectar la versin principal es una ventaja competitiva enorme. 
-En resumen, Git no solo organiza el trabajo, sino que aporta una capa de profesionalismo y confianza necesaria para el xito de cualquier software moderno. 
-Dominar estas herramientas es un estndar en la industria que asegura la calidad y la continuidad de los productos digitales.
+Mantener un registro de cambios mediante herramientas como Git es crucial para el desarrollo de software porque garantiza la trazabilidad y la seguridad del código. 
+Permite que los desarrolladores comprendan la evolución del proyecto, sabiendo quién realizó cada modificación, cuándo y por qué razón. 
+Esta visibilidad es fundamental para detectar errores y revertir el proyecto a un estado estable en caso de fallos críticos. 
+Además, Git facilita enormemente el trabajo en equipo, evitando que los cambios de un programador sobrescriban accidentalmente los de otro mediante el uso de ramas y fusiones. 
+Sin un sistema de control de versiones, la colaboración sería caótica y el riesgo de perder trabajo valioso sería extremadamente alto. 
+También sirve como una documentación histórica del desarrollo, lo que ayuda a nuevos integrantes a entender el contexto de las decisiones técnicas tomadas. 
+En proyectos grandes, la capacidad de experimentar con nuevas funcionalidades en ramas separadas sin afectar la versión principal es una ventaja competitiva enorme. 
+En resumen, Git no solo organiza el trabajo, sino que aporta una capa de profesionalismo y confianza necesaria para el éxito de cualquier software moderno. 
+Dominar estas herramientas es un estándar en la industria que asegura la calidad y la continuidad de los productos digitales.
