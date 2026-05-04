@@ -1,0 +1,47 @@
+Conceptos básicos de JavaScript – Semana 3 Día 1
+
+Nombre del estudiante: Maria Brochero
+Fecha: 04/05/2026
+Nombre de la rama: maria_brochero
+
+Responde con tus propias palabras.
+
+1. ¿Qué es JavaScript?
+
+Respuesta: JavaScript es un lenguaje de programación muy popular que permite dar interactividad a los sitios web. También se usa en el servidor para crear aplicaciones completas.
+
+2. ¿Qué permite hacer Node.js en esta clase?
+
+Respuesta: Permite ejecutar archivos con código JavaScript directamente en nuestra computadora desde la terminal, sin necesidad de usar un navegador web.
+
+3. ¿Qué hace el comando node algoritmo-verificacion.js?
+
+Respuesta: Le indica a Node.js que procese y ejecute todas las instrucciones lógicas que hemos escrito dentro del archivo algoritmo-verificacion.js.
+
+4. ¿Qué es una variable?
+
+Respuesta: Es un espacio con nombre en la memoria del computador donde podemos almacenar datos (como textos o números) para utilizarlos o modificarlos después.
+
+5. ¿Para qué se usa const?
+
+Respuesta: Se usa para declarar variables constantes, es decir, valores que no van a cambiar durante la ejecución del programa.
+
+6. ¿Para qué se usa let?
+
+Respuesta: Se usa para declarar variables que sí pueden cambiar su valor o ser reasignadas mientras el programa se está ejecutando.
+
+7. ¿Qué significa if?
+
+Respuesta: Es una palabra reservada que inicia una estructura de decisión. Significa "si ocurre esto..." y ejecuta un código solo si la condición es verdadera.
+
+8. ¿Qué significa else?
+
+Respuesta: Significa "de lo contrario". Es el bloque de código que se ejecuta cuando la condición del "if" no se cumple (es falsa).
+
+9. ¿Por qué una decisión en programación se parece a una decisión responsable en internet?
+
+Respuesta: Porque en ambos casos debemos evaluar criterios y condiciones lógicas antes de realizar una acción, asegurando que el resultado sea el correcto y responsable.
+
+10. ¿Cómo se relaciona este ejercicio con la verificación de información?
+
+Respuesta: Se relaciona al aplicar filtros lógicos (if/else) para decidir si una información es confiable y segura antes de permitir que sea compartida o publicada.

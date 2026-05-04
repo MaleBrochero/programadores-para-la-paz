@@ -1,0 +1,49 @@
+Bitácora de comando – Semana 3 Día 1
+
+Nombre del estudiante: Maria Brochero
+Fecha: 04/05/2026
+Nombre de la rama: maria_brochero
+
+Comando nuevo del día:
+node archivo.js
+
+Escribe los comandos que usaste durante la práctica.
+1. Comando usado para clonar el repositorio:
+
+Respuesta: git clone https://github.com/mmgranda/programadores-para-la-paz-semana3-dia1.git
+
+2. Comando usado para entrar a la carpeta del proyecto:
+
+Respuesta: cd programadores-para-la-paz-semana3-dia1
+
+3. Comando usado para crear tu rama personal:
+
+Respuesta: git checkout -b maria_brochero
+
+4. Comando usado para verificar la rama:
+
+Respuesta: git branch
+
+5. Comando usado para ejecutar algoritmo-verificacion.js:
+
+Respuesta: node algoritmo-verificacion.js
+
+6. Comando usado para ejecutar decision-comunitaria.js:
+
+Respuesta: node decision-comunitaria.js
+
+7. Comando usado para revisar cambios en Git:
+
+Respuesta: git status
+
+8. Comando usado para agregar cambios:
+
+Respuesta: git add .
+
+9. Comando usado para crear commit:
+
+Respuesta: git commit -m "Algoritmos simples con JavaScript semana 3 dia 1"
+
+10. Comando usado para publicar la rama:
+
+Respuesta: git push -u origin maria_brochero
