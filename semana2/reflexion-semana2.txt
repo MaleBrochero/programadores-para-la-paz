@@ -1,8 +1,8 @@
-Saber usar la terminal es una habilidad fundamental para cualquier desarrollador, ya que permite interactuar de manera ms directa y eficiente con el sistema operativo y las herramientas de desarrollo. 
-A diferencia de las interfaces grficas, la terminal ofrece una velocidad mucho mayor para realizar tareas repetitivas o complejas, como la gestin de dependencias, la configuracin de servidores y el uso de sistemas de control de versiones como Git. 
-Adems, permite automatizar procesos mediante scripts, lo que ahorra tiempo y reduce errores humanos en el flujo de trabajo. 
-Organizar archivos y navegar por directorios desde la consola facilita la comprensin de la estructura del proyecto y el acceso a rutas profundas de forma rpida. 
+Saber usar la terminal es una habilidad fundamental para cualquier desarrollador, ya que permite interactuar de manera más directa y eficiente con el sistema operativo y las herramientas de desarrollo. 
+A diferencia de las interfaces gráficas, la terminal ofrece una velocidad mucho mayor para realizar tareas repetitivas o complejas, como la gestión de dependencias, la configuración de servidores y el uso de sistemas de control de versiones como Git. 
+Además, permite automatizar procesos mediante scripts, lo que ahorra tiempo y reduce errores humanos en el flujo de trabajo. 
+Organizar archivos y navegar por directorios desde la consola facilita la comprensión de la estructura del proyecto y el acceso a rutas profundas de forma rápida. 
 Muchos entornos de desarrollo profesional y herramientas de despliegue en la nube se basan exclusivamente en comandos, por lo que dominar la terminal es indispensable para la escalabilidad. 
-Tambin es vital para la resolucin de problemas tcnicos, permitiendo ver logs y ejecutar diagnsticos que no siempre estn disponibles en una GUI. 
-En resumen, la terminal empodera al programador brindndole control total, flexibilidad y una mayor productividad en su da a da. 
-Dominar estos comandos bsicos es el primer paso para convertirse en un desarrollador ms completo y capaz de adaptarse a cualquier entorno tecnolgico.
+También es vital para la resolución de problemas técnicos, permitiendo ver logs y ejecutar diagnósticos que no siempre están disponibles en una GUI. 
+En resumen, la terminal empodera al programador brindándole control total, flexibilidad y una mayor productividad en su día a día. 
+Dominar estos comandos básicos es el primer paso para convertirse en un desarrollador más completo y capaz de adaptarse a cualquier entorno tecnológico.
