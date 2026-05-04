@@ -1,8 +1,8 @@
 Conceptos básicos de JavaScript – Semana 3 Día 1
 
-Nombre del estudiante: Maria Brochero
+Nombre del estudiante: Maria Leal Brochero
 Fecha: 04/05/2026
-Nombre de la rama: maria_brochero
+Nombre de la rama: maria_leal_brochero
 
 Responde con tus propias palabras.
 

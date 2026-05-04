@@ -1,8 +1,8 @@
 Bitácora de comando – Semana 3 Día 4
 
-Nombre del estudiante: Maria Brochero
+Nombre del estudiante: Maria Leal Brochero
 Fecha: 04/05/2026
-Nombre de la rama: maria_brochero
+Nombre de la rama: maria_leal_brochero
 
 Comando nuevo del día:
 npm run revisar
@@ -67,4 +67,4 @@ Respuesta: git commit -m "Arrays for y for of en JavaScript semana 3 dia 4"
 
 15. Comando usado para publicar la rama:
 
-Respuesta: git push -u origin maria_brochero
+Respuesta: git push -u origin maria_leal_brochero

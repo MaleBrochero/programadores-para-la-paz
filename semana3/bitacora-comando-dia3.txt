@@ -1,8 +1,8 @@
 Bitácora de comando – Semana 3 Día 3
 
-Nombre del estudiante: Maria Brochero
+Nombre del estudiante: Maria Leal Brochero
 Fecha: 04/05/2026
-Nombre de la rama: maria_brochero
+Nombre de la rama: maria_leal_brochero
 
 Comando nuevo del día:
 npm run practicar
@@ -55,4 +55,4 @@ Respuesta: git commit -m "Ciclos while en JavaScript semana 3 dia 3"
 
 12. Comando usado para publicar la rama:
 
-Respuesta: git push -u origin maria_brochero
+Respuesta: git push -u origin maria_leal_brochero
