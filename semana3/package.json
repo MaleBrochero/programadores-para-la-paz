@@ -1,0 +1,18 @@
+{
+    "name": "programadores-para-la-paz-semana3-dia4",
+    "version": "1.0.0",
+    "description": "Arrays, for y for...of en JavaScript para recorrer información comunitaria.",
+    "main": "array-basico.js",
+    "scripts": {
+      "revisar": "node array-basico.js",
+      "for": "node for-basico.js",
+      "forof": "node for-of-basico.js",
+      "propuestas": "node lista-propuestas.js",
+      "mensajes": "node revision-mensajes.js",
+      "fuentes": "node revision-fuentes.js",
+      "resumen": "node resumen-comunitario.js"
+    },
+    "author": "Programa Capacitación en Democracia y Tecnología",
+    "license": "MIT"
+  }
+  

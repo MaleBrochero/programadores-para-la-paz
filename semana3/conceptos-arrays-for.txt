@@ -1,0 +1,47 @@
+Conceptos básicos de arrays, for y for...of – Semana 3 Día 4
+
+Nombre del estudiante: Maria Brochero
+Fecha: 04/05/2026
+Nombre de la rama: maria_brochero
+
+Responde con tus propias palabras.
+
+1. ¿Qué es un array en JavaScript?
+
+Respuesta: Un array es una estructura de datos que permite almacenar múltiples valores en una sola variable, organizados por un índice numérico que comienza en cero.
+
+2. ¿Para qué sirve guardar varios datos en un array?
+
+Respuesta: Sirve para agrupar información relacionada, lo que facilita su manipulación, búsqueda, filtrado y procesamiento masivo mediante bucles.
+
+3. ¿Qué tipo de información comunitaria podría guardarse en un array?
+
+Respuesta: Se pueden guardar nombres de vecinos, propuestas de mejora, fechas de asambleas, fuentes de información verificadas o reportes de incidentes.
+
+4. ¿Qué hace un for tradicional?
+
+Respuesta: Ejecuta un bloque de código repetidamente mientras se cumpla una condición establecida, utilizando un contador manual para controlar las iteraciones.
+
+5. ¿Qué representa la variable i en un for tradicional?
+
+Respuesta: Representa el índice o contador del bucle, que nos permite acceder a la posición específica de cada elemento dentro de un array.
+
+6. ¿Qué significa .length?
+
+Respuesta: Es una propiedad de los arrays que nos devuelve la cantidad total de elementos que contiene la lista.
+
+7. ¿Qué hace for...of?
+
+Respuesta: Es una forma más moderna y legible de recorrer arrays, ya que accede directamente al valor de cada elemento sin necesidad de gestionar índices manuales.
+
+8. ¿Qué diferencia inicial encuentras entre for y for...of?
+
+Respuesta: El for tradicional es más flexible pero requiere más código, mientras que for...of es mucho más simple y fácil de leer cuando solo queremos pasar por todos los elementos.
+
+9. ¿Qué hace el comando npm run revisar?
+
+Respuesta: Ejecuta un script predefinido en el archivo package.json, que en esta práctica sirve para ejecutar y verificar el código de array-basico.js.
+
+10. ¿Cómo puede ayudar un array organizado a la participación ciudadana?
+
+Respuesta: Ayuda a dar visibilidad y seguimiento a todas las propuestas y actividades de forma transparente, asegurando que cada voz sea registrada y procesada equitativamente.
