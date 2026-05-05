@@ -10,7 +10,8 @@
       "propuestas": "node lista-propuestas.js",
       "mensajes": "node revision-mensajes.js",
       "fuentes": "node revision-fuentes.js",
-      "resumen": "node resumen-comunitario.js"
+      "resumen": "node resumen-comunitario.js",
+      "start": "node servidor.js"
     },
     "author": "Programa Capacitación en Democracia y Tecnología",
     "license": "MIT"

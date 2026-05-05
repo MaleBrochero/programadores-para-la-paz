@@ -1,0 +1,57 @@
+Bitácora de comando – Semana 3 Día 5
+Nombre del estudiante: María Leal Brochero
+Fecha: 05/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Comando nuevo del día:
+npm start
+
+Escribe los comandos que usaste durante la práctica.
+
+1. Comando usado para clonar el repositorio:
+
+Respuesta: git clone https://github.com/mmgranda/programadores-para-la-paz-semana3-dia5.git
+
+2. Comando usado para entrar a la carpeta del proyecto:
+
+Respuesta: cd programadores-para-la-paz-semana3-dia5
+
+3. Comando usado para crear tu rama personal:
+
+Respuesta: git checkout -b maria_leal_brochero
+
+4. Comando usado para verificar la rama:
+
+Respuesta: git branch
+
+5. Comando usado para levantar el servidor:
+
+Respuesta: npm start
+
+6. Dirección abierta en el navegador para probar GET:
+
+Respuesta: http://localhost:3000
+
+7. Dirección abierta en el navegador para ver propuestas:
+
+Respuesta: http://localhost:3000/propuestas
+
+8. Comando usado para probar POST:
+
+Respuesta: node cliente-post.js
+
+9. Comando usado para revisar cambios en Git:
+
+Respuesta: git status
+
+10. Comando usado para agregar cambios:
+
+Respuesta: git add .
+
+11. Comando usado para crear commit:
+
+Respuesta: git commit -m "Servidor Node HTTP GET POST semana 3 dia 5"
+
+12. Comando usado para publicar la rama:
+
+Respuesta: git push -u origin maria_leal_brochero
