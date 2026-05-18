@@ -1,8 +1,12 @@
 # Programadores para la Paz – Mini-sitio comunitario
 
-## Proyecto único de Semana 5
+## Estudiante del Proyecto
+- **Nombre:** María Leal Brochero
+- **Rama Personal:** maria_leal_brochero
+- **Módulo:** Módulo 2 - Comunicación Digital para la Paz y la Democracia (Semana 2 de Módulo 2 / Semana 5)
+- **Avance:** Clase 21 (Inicialización), Clase 22 (Tablero de Mensajes y Accesibilidad) y Clase 23 (Integración Frontend-Backend y API propia) completados.
 
-Este repositorio se trabaja desde la Clase 21 hasta la Clase 25.
+## Proyecto único de Semana 5
 
 ## Propósito del proyecto
 
