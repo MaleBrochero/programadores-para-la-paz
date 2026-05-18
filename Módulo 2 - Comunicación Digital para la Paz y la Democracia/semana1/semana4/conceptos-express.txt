@@ -1,0 +1,47 @@
+Conceptos básicos de Express – Módulo 2 Semana 1 Día 1
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Responde con tus propias palabras.
+
+1. ¿Qué es Express?
+
+Respuesta: Es un framework web rápido y minimalista para Node.js que simplifica significativamente la creación de servidores HTTP y la gestión de rutas.
+
+2. ¿Qué diferencia básica hay entre Node.js y Express?
+
+Respuesta: Node.js es el entorno de ejecución que nos permite correr JavaScript en el servidor, mientras que Express es una librería o framework que se construye sobre Node.js para facilitarnos la programación de aplicaciones web sin tener que escribir todo el código HTTP desde cero.
+
+3. ¿Qué hace el comando npm install express?
+
+Respuesta: Descarga e instala la biblioteca de Express y todas sus dependencias dentro de la carpeta node_modules del proyecto, y agrega la dependencia en nuestro archivo package.json.
+
+4. ¿Qué hace el comando npm start en esta práctica?
+
+Respuesta: Ejecuta el script "start" configurado dentro de package.json, el cual levanta nuestro servidor de Node corriendo de manera directa el archivo server.js.
+
+5. ¿Qué es una ruta en Express?
+
+Respuesta: Es una dirección o punto de acceso (URI) combinada con un método HTTP específico (como GET o POST) que determina cómo responde el servidor ante una solicitud del cliente.
+
+6. ¿Para qué usamos una ruta GET?
+
+Respuesta: La usamos para solicitar o consultar información y recursos del servidor de manera segura, sin modificar ningún dato en la plataforma (por ejemplo, para leer los avisos o ver la campaña).
+
+7. ¿Para qué usamos una ruta POST?
+
+Respuesta: La usamos para enviar datos nuevos desde el cliente hacia el servidor con el fin de procesarlos, guardarlos o tomar alguna acción (como registrar una propuesta comunitaria).
+
+8. ¿Qué significa req en una ruta?
+
+Respuesta: Hace referencia al objeto "request" (solicitud), el cual contiene toda la información que el cliente envía al servidor (el cuerpo del mensaje, la IP, cabeceras, etc.).
+
+9. ¿Qué significa res en una ruta?
+
+Respuesta: Hace referencia al objeto "response" (respuesta), el cual usamos en el servidor para definir qué datos, texto o estado HTTP le devolveremos al cliente.
+
+10. ¿Cómo puede servir Express para construir herramientas de comunicación comunitaria?
+
+Respuesta: Nos permite crear de forma sumamente ágil y organizada diferentes canales digitales donde la comunidad puede consultar información pública relevante (rutas GET) y enviar sus propuestas o reportes de manera directa y responsable (rutas POST).

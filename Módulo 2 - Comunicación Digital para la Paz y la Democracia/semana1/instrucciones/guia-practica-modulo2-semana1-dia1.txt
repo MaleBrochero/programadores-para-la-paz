@@ -1,0 +1,113 @@
+Guía práctica – Módulo 2 Semana 1 Día 1
+
+Actividad:
+Introducción a Express para rutas de comunicación digital responsable.
+
+Repositorio:
+Repositorio dispuesto por el docente.
+
+Importante:
+No debes trabajar directamente en main.
+
+Cada estudiante debe crear una rama personal con el formato:
+
+nombres_apellidos
+
+Ejemplo:
+maria_gomez
+juan_perez
+laura_torres_garcia
+
+Evidencia:
+La evidencia de esta actividad es únicamente el push de tu rama personal a GitHub.
+
+No debes entregar nada en Moodle.
+No debes enviar capturas.
+No debes subir archivos adicionales.
+No debes publicar enlaces por otro medio.
+
+Comando nuevo del día:
+npm install express
+
+Pasos obligatorios:
+
+0. Hacer Fork
+
+1. Clonar el repositorio
+
+git clone URL_DEL_REPOSITORIO
+
+2. Entrar a la carpeta del proyecto
+
+cd NOMBRE_DEL_REPOSITORIO
+
+3. Crear la rama personal
+
+git checkout -b nombres_apellidos
+
+4. Verificar la rama actual
+
+git branch
+
+La rama marcada con * debe ser tu rama personal, no main.
+
+5. Instalar Express
+
+npm install express
+
+6. Levantar el servidor
+
+npm start
+
+7. Abrir en el navegador
+
+http://localhost:3000
+
+8. Abrir la ruta de campaña
+
+http://localhost:3000/campania
+
+9. Abrir la ruta de avisos
+
+http://localhost:3000/avisos
+
+10. Probar POST en otra terminal
+
+node cliente-post.js
+
+11. Modificar el mensaje de bienvenida en server.js
+
+12. Detener el servidor con Ctrl + C
+
+13. Levantar nuevamente el servidor
+
+npm start
+
+14. Modificar el mensaje enviado en cliente-post.js
+
+15. Probar POST nuevamente
+
+node cliente-post.js
+
+16. Completar los archivos:
+
+semana4/conceptos-express.txt
+semana4/bitacora-comando-dia1.txt
+semana4/temas-actuales-comunicacion.txt
+semana4/reflexion-comunicacion-digital.txt
+
+17. Revisar cambios
+
+git status
+
+18. Agregar cambios
+
+git add .
+
+19. Crear commit
+
+git commit -m "Introduccion a Express modulo 2 semana 1 dia 1"
+
+20. Publicar la rama
+
+git push -u origin nombres_apellidos

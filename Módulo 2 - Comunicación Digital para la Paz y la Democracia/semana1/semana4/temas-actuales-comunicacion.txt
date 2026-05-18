@@ -1,0 +1,28 @@
+Temas actuales de comunicación digital – Módulo 2 Semana 1 Día 1
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Lee los temas sugeridos por el docente de comunicaciones durante la clase y responde.
+
+1. ¿Qué tema actual se mencionó en la clase?
+Ejemplos: desinformación, IA generativa, confianza en noticias, convivencia digital, gobernanza de plataformas, violencia digital, participación juvenil.
+
+Respuesta: La desinformación y el fomento de una convivencia digital responsable y transparente.
+
+2. ¿Por qué ese tema afecta la participación ciudadana?
+
+Respuesta: Afecta gravemente la participación debido a que, cuando los miembros de una comunidad reciben información falsa o distorsionada, se genera desconfianza hacia las instituciones locales y entre los mismos vecinos. Esto reduce la motivación para unirse a iniciativas comunitarias o tomar decisiones democráticas informadas.
+
+3. ¿Qué riesgo puede generar para una comunidad?
+
+Respuesta: Puede generar división interna, polarización, propagación de rumores infundados que causen alarma innecesaria y, en última instancia, la fractura de la confianza comunitaria, dificultando el avance de proyectos locales de beneficio común.
+
+4. ¿Qué acción responsable podría tomar una comunidad frente a ese tema?
+
+Respuesta: Establecer comités de verificación de información, capacitar a los vecinos en el uso responsable de redes sociales (responsabilidad digital) y promover la adopción de un lenguaje claro y constructivo en todos los canales de interacción local.
+
+5. ¿Cómo podría ayudar una plataforma digital comunitaria a informar mejor sobre ese tema?
+
+Respuesta: Permitiendo centralizar las comunicaciones de forma oficial, donde se publiquen campañas educativas con datos contrastados (GET /campania) y se cuente con un canal directo y transparente para recibir inquietudes y propuestas legítimas de la comunidad (POST /propuestas), mitigando la propagación de rumores y "fake news".
