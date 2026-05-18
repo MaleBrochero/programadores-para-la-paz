@@ -1,13 +1,13 @@
-# Programadores para la Paz – Módulo 2 Semana 1 Día 1
+# Programadores para la Paz – Módulo 2 Semana 1 Día 2
 
 ## Actividad
-Introducción a Express para rutas de comunicación digital responsable.
+Fetch: conectar un cliente web con un servidor Express.
 
 ## Objetivo
-Comprender qué es Express, instalarlo en un proyecto Node.js y crear rutas básicas para publicar mensajes, avisos y recibir propuestas comunitarias.
+Comprender qué es fetch y cómo permite que una página web consulte información y envíe propuestas a un servidor Express.
 
 ## Enfoque ciudadano
-Esta práctica se conecta con el inicio del Módulo 2: Comunicación Digital para la Paz y la Democracia. Una plataforma comunitaria debe informar con claridad, recibir propuestas y responder de forma responsable.
+Esta práctica se conecta con comunicación digital responsable. Una plataforma comunitaria debe permitir consultar avisos, revisar campañas y enviar propuestas con respuestas claras.
 
 ## Importante
 
@@ -18,18 +18,18 @@ No se trabajará autenticación.
 No se trabajará login.
 No se trabajará despliegue.
 No se trabajará seguridad avanzada.
-No se trabajará frontend conectado.
+No se trabajará React.
+No se trabajará frontend avanzado.
 
 ## Comando nuevo del día
 
-npm install express
+npm install
 
-Este comando instala Express en el proyecto.
+Este comando instala las dependencias necesarias del proyecto.
 
 ## Comandos que se siguen practicando
 
 npm start
-node cliente-post.js
 git status
 git add .
 git commit
@@ -61,13 +61,14 @@ No debes enviar evidencias por otro medio.
 ## Archivos que debes trabajar
 
 - server.js
-- cliente-post.js
+- public/index.html
+- public/app.js
 - package.json
 - package-lock.json
-- semana4/conceptos-express.txt
-- semana4/bitacora-comando-dia1.txt
-- semana4/temas-actuales-comunicacion.txt
-- semana4/reflexion-comunicacion-digital.txt
+- semana4/conceptos-fetch.txt
+- semana4/bitacora-comando-dia2.txt
+- semana4/reflexion-comunicacion-fetch.txt
+- semana4/analisis-mensaje-comunitario.txt
 
 ## Comandos principales
 
@@ -76,10 +77,9 @@ git clone URL_DEL_REPOSITORIO
 cd NOMBRE_DEL_REPOSITORIO
 git checkout -b nombres_apellidos
 git branch
-npm install express
+npm install
 npm start
-node cliente-post.js
 git status
 git add .
-git commit -m "Introduccion a Express modulo 2 semana 1 dia 1"
+git commit -m "Fetch cliente servidor modulo 2 semana 1 dia 2"
 git push -u origin nombres_apellidos

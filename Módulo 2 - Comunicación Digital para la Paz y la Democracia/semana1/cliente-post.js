@@ -5,7 +5,7 @@ const datos = "Propuesta de María Leal: Fomentar talleres de convivencia digita
 const opciones = {
   hostname: "localhost",
   port: 3000,
-  path: "/propuestas",
+  path: "/api/propuestas",
   method: "POST",
   headers: {
     "Content-Type": "text/plain; charset=utf-8",

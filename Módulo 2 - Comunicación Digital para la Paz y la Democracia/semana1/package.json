@@ -1,15 +1,15 @@
 {
-    "name": "programadores-para-la-paz-modulo2-semana1-dia1",
+    "name": "programadores-para-la-paz-modulo2-semana1-dia2",
     "version": "1.0.0",
-    "description": "Servidor Express básico para comunicación digital responsable.",
+    "description": "Cliente web con fetch conectado a servidor Express.",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js",
-        "post": "node cliente-post.js"
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
     },
     "author": "Programa Capacitación en Democracia y Tecnología",
-    "license": "MIT",
-    "dependencies": {
-        "express": "^5.2.1"
-    }
-}
+    "license": "MIT"
+  }
+  

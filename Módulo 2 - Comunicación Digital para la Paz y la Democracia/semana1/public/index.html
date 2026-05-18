@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliente Web Comunitario</title>
+</head>
+<body>
+  <main>
+    <h1>Cliente web comunitario</h1>
+
+    <p>
+      Esta página usa fetch para consultar información del servidor y enviar propuestas comunitarias.
+    </p>
+
+    <section>
+      <h2>Consultar información</h2>
+
+      <button id="btnCampania">Consultar campaña</button>
+      <button id="btnAvisos">Consultar avisos</button>
+
+      <p id="respuestaConsulta">Aquí aparecerá la respuesta del servidor.</p>
+    </section>
+
+    <section>
+      <h2>Enviar propuesta</h2>
+
+      <label for="propuesta">Escribe una propuesta comunitaria:</label>
+      <br>
+      <textarea id="propuesta" rows="5" cols="50">Propuesta de María Leal: Crear talleres virtuales de alfabetización digital y detección de noticias falsas.</textarea>
+      <br>
+      <button id="btnEnviar">Enviar propuesta</button>
+
+      <p id="respuestaEnvio">Aquí aparecerá la confirmación del servidor.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
