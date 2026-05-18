@@ -1,0 +1,33 @@
+Reflexión de cierre – Módulo 2 Semana 1 Día 5
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Escribe una reflexión de 8 a 10 líneas respondiendo:
+
+¿Qué aprendiste esta semana sobre la relación entre comunicación digital responsable y programación?
+
+En tu respuesta menciona al menos cuatro de estas ideas:
+
+- API
+- JSON
+- fetch
+- promesas
+- then
+- catch
+- validaciones
+- trazabilidad en Git
+- depuración con IA
+- narrativa digital
+- audiencia
+- tono
+- llamado a la acción
+- lenguaje responsable y no estigmatizante
+- reglas editoriales
+- métricas ciudadanas
+- participación ciudadana
+- cultura de paz
+
+Respuesta:
+Esta semana comprendí que la programación y la comunicación digital responsable son disciplinas profundamente complementarias cuando se ponen al servicio de la participación ciudadana. A nivel técnico, aprendí a estructurar una API con Express que se comunica asíncronamente con el cliente mediante fetch y promesas, administrando los flujos de éxito con then y gestionando de forma robusta los errores con catch. Esta arquitectura informática cobra un propósito ético trascendental al integrar validaciones en el servidor que aplican reglas editoriales estrictas para exigir un lenguaje responsable y no estigmatizante en las propuestas guardadas en el JSON. Asimismo, la trazabilidad en Git de mi código y la depuración con IA me permitieron consolidar una herramienta transparente y segura. En conclusión, programar bajo este modelo no es solo escribir código lógico, sino diseñar espacios de sana convivencia digital y métricas ciudadanas claras que empoderen a la comunidad y sienten las bases pedagógicas para la construcción real de una cultura de paz.

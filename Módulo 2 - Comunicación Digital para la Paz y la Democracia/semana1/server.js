@@ -34,76 +34,90 @@ const tonosPermitidos = [
 ]
 
 app.get("/api/propuestas", (req, res) => {
-  const propuestas = leerPropuestas()
-  res.json(propuestas)
+  try {
+    const propuestas = leerPropuestas()
+    res.json(propuestas)
+  } catch (error) {
+    res.status(500).json({
+      mensaje: "No fue posible leer las propuestas. Revisa el archivo JSON.",
+      detalle: error.message
+    })
+  }
 })
 
 app.post("/api/propuestas", (req, res) => {
-  const propuestas = leerPropuestas()
+  try {
+    const propuestas = leerPropuestas()
 
-  if (!req.body.titulo || req.body.titulo.trim() === "") {
-    return res.status(400).json({
-      mensaje: "Falta el título. Toda propuesta debe tener un título claro."
+    if (!req.body.titulo || req.body.titulo.trim() === "") {
+      return res.status(400).json({
+        mensaje: "Falta el título. Toda propuesta debe tener un título claro."
+      })
+    }
+
+    if (!req.body.mensaje || req.body.mensaje.trim() === "") {
+      return res.status(400).json({
+        mensaje: "Falta el mensaje. Toda propuesta debe explicar su propósito comunitario."
+      })
+    }
+
+    if (!req.body.categoria || !categoriasPermitidas.includes(req.body.categoria)) {
+      return res.status(400).json({
+        mensaje: "La categoría es obligatoria y debe corresponder a una opción válida."
+      })
+    }
+
+    if (!req.body.audiencia || req.body.audiencia.trim() === "") {
+      return res.status(400).json({
+        mensaje: "Falta la audiencia. Todo mensaje debe indicar a quién va dirigido."
+      })
+    }
+
+    if (!req.body.tono || !tonosPermitidos.includes(req.body.tono)) {
+      return res.status(400).json({
+        mensaje: "El tono es obligatorio y debe corresponder a una opción válida."
+      })
+    }
+
+    if (!req.body.llamadoAccion || req.body.llamadoAccion.trim() === "") {
+      return res.status(400).json({
+        mensaje: "Falta el llamado a la acción. La propuesta debe indicar qué se espera de la comunidad."
+      })
+    }
+
+    if (!req.body.autor || req.body.autor.trim() === "") {
+      return res.status(400).json({
+        mensaje: "Falta el autor o grupo responsable de la propuesta."
+      })
+    }
+
+    const nuevaPropuesta = {
+      id: propuestas.length + 1,
+      titulo: req.body.titulo.trim(),
+      mensaje: req.body.mensaje.trim(),
+      categoria: req.body.categoria,
+      audiencia: req.body.audiencia.trim(),
+      tono: req.body.tono,
+      llamadoAccion: req.body.llamadoAccion.trim(),
+      autor: req.body.autor.trim(),
+      estado: "recibida",
+      revisionEditorial: "pendiente",
+      fecha: new Date().toISOString()
+    }
+
+    propuestas.push(nuevaPropuesta)
+    guardarPropuestas(propuestas)
+
+    res.status(201).json({
+      mensaje: "¡Muchas gracias! Tu propuesta de participación ha sido recibida y guardada de forma segura por María Leal. Queda registrada oficialmente en nuestro archivo JSON y en proceso de revisión bajo los criterios de comunicación digital responsable y no estigmatizante de nuestra comunidad.",
+      propuesta: nuevaPropuesta
+    })
+  } catch (error) {
+    res.status(500).json({
+      mensaje: "No fue posible guardar la propuesta. Revisa el servidor y el archivo JSON.",
+      detalle: error.message
     })
   }
-
-  if (!req.body.mensaje || req.body.mensaje.trim() === "") {
-    return res.status(400).json({
-      mensaje: "Falta el mensaje. Toda propuesta debe explicar su propósito comunitario."
-    })
-  }
-
-  if (!req.body.categoria || !categoriasPermitidas.includes(req.body.categoria)) {
-    return res.status(400).json({
-      mensaje: "La categoría es obligatoria y debe corresponder a una opción válida."
-    })
-  }
-
-  if (!req.body.audiencia || req.body.audiencia.trim() === "") {
-    return res.status(400).json({
-      mensaje: "Falta la audiencia. Todo mensaje debe indicar a quién va dirigido."
-    })
-  }
-
-  if (!req.body.tono || !tonosPermitidos.includes(req.body.tono)) {
-    return res.status(400).json({
-      mensaje: "El tono es obligatorio y debe corresponder a una opción válida."
-    })
-  }
-
-  if (!req.body.llamadoAccion || req.body.llamadoAccion.trim() === "") {
-    return res.status(400).json({
-      mensaje: "Falta el llamado a la acción. La propuesta debe indicar qué se espera de la comunidad."
-    })
-  }
-
-  if (!req.body.autor || req.body.autor.trim() === "") {
-    return res.status(400).json({
-      mensaje: "Falta el autor o grupo responsable de la propuesta."
-    })
-  }
-
-  const nuevaPropuesta = {
-    id: propuestas.length + 1,
-    titulo: req.body.titulo.trim(),
-    mensaje: req.body.mensaje.trim(),
-    categoria: req.body.categoria,
-    audiencia: req.body.audiencia.trim(),
-    tono: req.body.tono,
-    llamadoAccion: req.body.llamadoAccion.trim(),
-    autor: req.body.autor.trim(),
-    estado: "recibida",
-    revisionEditorial: "pendiente",
-    fecha: new Date().toISOString()
-  }
-
-  propuestas.push(nuevaPropuesta)
-  guardarPropuestas(propuestas)
-
-  res.status(201).json({
-    mensaje: "¡Muchas gracias! Tu propuesta de participación ha sido recibida y guardada de forma segura por María Leal. Queda registrada oficialmente en nuestro archivo JSON y en proceso de revisión bajo los criterios de comunicación digital responsable y no estigmatizante de nuestra comunidad.",
-    propuesta: nuevaPropuesta
-  })
 })
 
 app.use((req, res) => {

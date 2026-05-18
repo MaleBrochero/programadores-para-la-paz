@@ -1,0 +1,41 @@
+Registro de depuración con IA – Módulo 2 Semana 1 Día 5
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Importante:
+La IA puede apoyar la depuración, pero toda sugerencia debe revisarse, entenderse y probarse antes de aceptarse.
+
+1. Error o duda técnica revisada:
+Ejemplos: no funciona fetch, no carga la API, error en JSON, el formulario no envía, el servidor no inicia.
+
+Respuesta: Duda y error controlado al escribir de forma incorrecta la ruta en el cliente (p. ej., invocar fetch("/api/propuesta") en singular en lugar de "/api/propuestas" en plural), generando un error HTTP 404 (Not Found) que es capturado por el método .catch().
+
+2. Pregunta formulada a la IA:
+
+Respuesta: "Estoy desarrollando una app con Express y fetch en JavaScript. Modifiqué la ruta del fetch en el frontend para probar a '/api/propuesta' y ahora la página no carga las propuestas y salta el bloque .catch() mostrando el error. ¿Por qué ocurre esto y cómo se soluciona?"
+
+3. Resumen de la sugerencia recibida:
+
+Respuesta: La IA explicó que el error 404 significa que la URL consultada por el cliente no coincide exactamente con ninguna de las rutas registradas en el servidor Express. Señaló que en server.js el endpoint está definido como "/api/propuestas" (en plural), por lo que cualquier variación en singular causará que el servidor no reconozca la ruta y devuelva 404, lo que a su vez se traduce en un fallo capturado por el .catch() si la respuesta no se maneja correctamente. Sugirió corregir la ruta del fetch en app.js para sincronizarla con el servidor.
+
+4. ¿Qué parte de la sugerencia entendiste?
+
+Respuesta: Entendí que la comunicación cliente-servidor mediante APIs exige una precisión exacta y absoluta en las direcciones URL (rutas). También comprendí que el método .catch() en una cadena de promesas es el que intercepta este tipo de fallos de red para evitar que la aplicación web deje de responder o se cuelgue ante la mirada del usuario.
+
+5. ¿Qué cambio aplicaste?
+
+Respuesta: Modifiqué el archivo public/app.js temporalmente para introducir el error voluntario en el fetch del botón de cargar propuestas (poniéndolo en singular "/api/propuesta"). Validé el comportamiento del error en el navegador y, posteriormente, apliqué la corrección sugerida restaurando la ruta en plural "/api/propuestas".
+
+6. ¿Cómo probaste que funcionó?
+
+Respuesta: Ejecuté el comando npm run prueba, abrí http://localhost:3000, hice clic en el botón "Cargar propuestas" y comprobé que con el error singular la página mostraba "No fue posible cargar las propuestas...". Luego de guardar la corrección en plural y refrescar la pantalla, verifiqué que el listado de propuestas se renderizaba correctamente en pantalla.
+
+7. ¿Qué aprendiste de la depuración?
+
+Respuesta: Aprendí que la IA es una herramienta de asistencia excelente para comprender códigos de error HTTP de manera ágil, pero que el programador siempre debe validar el diagnóstico revisando su propio código línea por línea y ejecutando pruebas manuales en el entorno local antes de dar por buena cualquier solución.
+
+8. ¿La IA resolvió todo o necesitaste verificar por tu cuenta?
+
+Respuesta: La IA aportó el diagnóstico conceptual perfecto del error 404, pero yo debí abrir los archivos, realizar la edición manual en public/app.js, reiniciar el proceso en la terminal de mi sistema operativo y validar visualmente el flujo de datos en el navegador.

@@ -12,7 +12,7 @@ const btnCargar = document.getElementById("btnCargar")
 const respuestaEnvio = document.getElementById("respuestaEnvio")
 const contenedorPropuestas = document.getElementById("contenedorPropuestas")
 
-btnEnviar.addEventListener("click", async () => {
+btnEnviar.addEventListener("click", () => {
   const nuevaPropuesta = {
     titulo: titulo.value,
     mensaje: mensaje.value,
@@ -23,50 +23,58 @@ btnEnviar.addEventListener("click", async () => {
     autor: autor.value
   }
 
-  const respuesta = await fetch("/api/propuestas", {
+  fetch("/api/propuestas", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(nuevaPropuesta)
   })
-
-  const datos = await respuesta.json()
-
-  respuestaEnvio.textContent = datos.mensaje
-
-  if (respuesta.ok) {
-    await cargarPropuestas()
-  }
+    .then((respuesta) => {
+      return respuesta.json()
+    })
+    .then((datos) => {
+      respuestaEnvio.textContent = datos.mensaje
+      cargarPropuestas()
+    })
+    .catch((error) => {
+      respuestaEnvio.textContent = "No fue posible enviar la propuesta. Revisa que el servidor esté funcionando."
+    })
 })
 
-btnCargar.addEventListener("click", async () => {
-  await cargarPropuestas()
+btnCargar.addEventListener("click", () => {
+  cargarPropuestas()
 })
 
-async function cargarPropuestas() {
-  const respuesta = await fetch("/api/propuestas")
-  const propuestas = await respuesta.json()
+function cargarPropuestas() {
+  fetch("/api/propuestas")
+    .then((respuesta) => {
+      return respuesta.json()
+    })
+    .then((propuestas) => {
+      contenedorPropuestas.innerHTML = ""
 
-  contenedorPropuestas.innerHTML = ""
+      for (const propuesta of propuestas) {
+        const bloque = document.createElement("div")
 
-  for (const propuesta of propuestas) {
-    const bloque = document.createElement("div")
+        bloque.innerHTML = `
+          <h3>${propuesta.titulo}</h3>
+          <p>${propuesta.mensaje}</p>
+          <p>Categoría: ${propuesta.categoria}</p>
+          <p>Audiencia: ${propuesta.audiencia}</p>
+          <p>Tono: ${propuesta.tono}</p>
+          <p>Llamado a la acción: ${propuesta.llamadoAccion}</p>
+          <p>Autor: ${propuesta.autor}</p>
+          <p>Estado: ${propuesta.estado}</p>
+          <p>Revisión editorial: ${propuesta.revisionEditorial}</p>
+          <p>Fecha: ${propuesta.fecha}</p>
+          <hr>
+        `
 
-    bloque.innerHTML = `
-      <h3>${propuesta.titulo}</h3>
-      <p>${propuesta.mensaje}</p>
-      <p>Categoría: ${propuesta.categoria}</p>
-      <p>Audiencia: ${propuesta.audiencia}</p>
-      <p>Tono: ${propuesta.tono}</p>
-      <p>Llamado a la acción: ${propuesta.llamadoAccion}</p>
-      <p>Autor: ${propuesta.autor}</p>
-      <p>Estado: ${propuesta.estado}</p>
-      <p>Revisión editorial: ${propuesta.revisionEditorial}</p>
-      <p>Fecha: ${propuesta.fecha}</p>
-      <hr>
-    `
-
-    contenedorPropuestas.appendChild(bloque)
-  }
+        contenedorPropuestas.appendChild(bloque)
+      }
+    })
+    .catch((error) => {
+      contenedorPropuestas.textContent = "No fue posible cargar las propuestas. Revisa que el servidor esté funcionando."
+    })
 }

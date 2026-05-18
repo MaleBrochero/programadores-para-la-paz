@@ -1,0 +1,85 @@
+Modelo de datos tipo message – Módulo 2 Semana 1 Día 5
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Un mensaje comunitario debe tener una estructura clara antes de publicarse o guardarse.
+
+Campos obligatorios:
+
+1. titulo
+Descripción:
+Título claro del mensaje o propuesta.
+
+2. mensaje
+Descripción:
+Contenido principal de la propuesta o aviso.
+
+3. categoria
+Descripción:
+Tema que permite organizar el mensaje.
+
+4. audiencia
+Descripción:
+Grupo al que va dirigido el mensaje.
+
+5. tono
+Descripción:
+Forma en que se comunica el mensaje.
+
+6. llamadoAccion
+Descripción:
+Acción esperada por parte de la comunidad.
+
+7. autor
+Descripción:
+Persona o grupo responsable del mensaje.
+
+8. estado
+Descripción:
+Situación actual del mensaje. Ejemplo: recibida, en revisión, publicada.
+
+9. revisionEditorial
+Descripción:
+Estado de revisión comunicativa. Ejemplo: pendiente, aprobada, requiere ajuste.
+
+10. fecha
+Descripción:
+Momento en que fue recibida la propuesta.
+
+Campos opcionales:
+
+1. fuente
+Respuesta: Tipo de dato string. Documenta y valida el origen fáctico de la información, permitiendo verificar los datos mencionados en la propuesta para evitar rumores.
+
+2. evidenciaMinima
+Respuesta: Tipo de dato string (o enlace). Registra actas, firmas o fotos que demuestren que la propuesta cuenta con respaldo social real antes de ser evaluada.
+
+3. canal
+Respuesta: Tipo de dato string. Especifica el canal digital o físico recomendado a través del cual se difundirá el mensaje definitivo (p. ej., Cartelera virtual, boletín impreso).
+
+4. responsableRevision
+Respuesta: Tipo de dato string. Identifica al moderador del equipo comunitario encargado de auditar y aprobar el mensaje, asegurando transparencia en el proceso.
+
+Categorías permitidas:
+
+- prevencion-desinformacion
+- cultura-de-paz
+- participacion-ciudadana
+- convivencia-digital
+
+Reglas mínimas de publicación:
+
+1. No publicar mensajes sin título.
+2. No publicar mensajes sin propósito comunitario.
+3. No publicar mensajes sin categoría.
+4. No publicar mensajes con lenguaje ofensivo.
+5. No publicar mensajes con lenguaje estigmatizante.
+6. No publicar afirmaciones verificables sin fuente.
+7. No publicar datos personales innecesarios.
+
+Explica con tus palabras:
+¿Por qué este modelo ayuda a organizar mejor la información comunitaria?
+
+Respuesta: Este modelo de datos estructurado (tipo message) dota a la comunicación comunitaria de un estándar de calidad técnico y ético muy elevado. En lugar de recibir textos libres e informales que puedan inducir a malentendidos, estigmas o desinformación, el modelo exige de forma obligatoria pensar en la audiencia, el tono, la categoría y el llamado a la acción. Además, los campos opcionales facilitan verificar las fuentes y registrar qué moderador asumió la responsabilidad de la publicación. Esto promueve la trazabilidad, garantiza la transparencia, cuida la convivencia digital de los vecinos y eleva significativamente el nivel del debate público dentro de la comunidad, fortaleciendo la confianza en los canales de participación digitales.

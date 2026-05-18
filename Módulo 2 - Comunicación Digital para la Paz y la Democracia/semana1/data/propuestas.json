@@ -24,5 +24,18 @@
     "estado": "recibida",
     "revisionEditorial": "pendiente",
     "fecha": "2026-05-18T19:54:54.784Z"
+  },
+  {
+    "id": 3,
+    "titulo": "Talleres de Convivencia Digital y Lenguaje Claro",
+    "mensaje": "Capacitar a jóvenes y adultos de la comunidad en el uso de un lenguaje respetuoso, preventivo y claro para evitar la polarización en redes sociales.",
+    "categoria": "convivencia-digital",
+    "audiencia": "comunidad general",
+    "tono": "pedagogico",
+    "llamadoAccion": "Consulta la información oficial antes de compartir mensajes en grupos comunitarios.",
+    "autor": "María Leal - Red de Convivencia",
+    "estado": "recibida",
+    "revisionEditorial": "pendiente",
+    "fecha": "2026-05-18T19:57:28.622Z"
   }
 ]
