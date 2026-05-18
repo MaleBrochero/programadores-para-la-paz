@@ -1,8 +1,10 @@
-Bitácora Git del proyecto vivo – Clase 21
+Bitácora Git del proyecto vivo – Clase 21 y Clase 22
 
 Nombre del estudiante: María Leal Brochero
 Fecha: 18/05/2026
 Nombre de la rama: maria_leal_brochero
+
+SECCIÓN 1: INICIALIZACIÓN (Clase 21)
 
 1. Nombre del repositorio único de Semana 5:
 
@@ -59,3 +61,34 @@ Respuesta: git commit -m "Clase 21 inicio proyecto unico mini sitio"
 14. Comando usado para publicar tu rama:
 
 Respuesta: git push -u origin maria_leal_brochero
+
+
+SECCIÓN 2: ACTUALIZACIÓN DESDE MAIN Y FUSIÓN (Clase 22)
+
+15. Comando usado para cambiar a la rama main para actualizar:
+
+Respuesta: git checkout main
+
+16. Comando usado para actualizar tu main local con la del servidor remoto (con fast-forward obligatorio):
+
+Respuesta: git pull --ff-only origin main
+
+17. Comando usado para volver a tu rama personal:
+
+Respuesta: git checkout maria_leal_brochero
+
+18. Comando usado para incorporar y fusionar los cambios de main a tu rama:
+
+Respuesta: git merge main
+
+19. Comando usado para verificar que estás en tu rama personal antes de modificar el código:
+
+Respuesta: git branch
+
+20. Comando de commit utilizado para guardar los cambios de la Clase 22:
+
+Respuesta: git commit -m "Clase 22 tablero mensajes accesibilidad"
+
+21. Comando utilizado para enviar los cambios consolidados a GitHub:
+
+Respuesta: git push

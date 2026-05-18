@@ -1,8 +1,8 @@
 Pruebas del tablero de mensajes – Clase 22
 
-Nombre del estudiante:
-Fecha:
-Nombre de la rama:
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
 
 Prueba 1: Abrir mini-sitio
 
@@ -13,9 +13,10 @@ Resultado esperado:
 El mini-sitio abre correctamente y muestra estructura visual con estilos.
 
 Resultado observado:
+El mini-sitio se despliega de forma impecable en el navegador. Se visualiza la nueva cabecera personalizada: "Tablero de Convivencia Digital - María Leal". Las secciones están claramente delimitadas, los botones son interactivos y el diseño responde correctamente al tamaño de pantalla.
 
 ¿Funcionó?
-Respuesta:
+Respuesta: SÍ
 
 Prueba 2: Verificar hoja de estilos
 
@@ -26,9 +27,10 @@ Resultado esperado:
 La página muestra fondo, secciones, botones y tarjetas con estilos básicos.
 
 Resultado observado:
+Los estilos se aplican correctamente: el cuerpo tiene un fondo limpio, los botones tienen interacción visual en cursor, y los contenedores de las tarjetas adquieren un formato estructurado con bordes grises y bordes laterales izquierdos resaltados en gris oscuro que mejoran significativamente el aspecto estético.
 
 ¿Funcionó?
-Respuesta:
+Respuesta: SÍ
 
 Prueba 3: Cargar mensajes
 
@@ -39,9 +41,10 @@ Resultado esperado:
 Los mensajes aparecen como tarjetas legibles.
 
 Resultado observado:
+El tablero carga 3 tarjetas correspondientes a las propuestas comunitarias registradas. El texto se formatea de manera organizada dentro de cada bloque, facilitando una lectura clara y fluida.
 
 ¿Funcionó?
-Respuesta:
+Respuesta: SÍ
 
 Prueba 4: Revisar datos visibles
 
@@ -55,9 +58,10 @@ llamado a la acción
 fuente
 
 Resultado observado:
+Aparecen exactamente los siete atributos esperados en cada tarjeta de propuesta. El título destaca en tamaño de letra grande y negrita, el mensaje describe la idea de forma clara, y las etiquetas inferiores marcan la categoría, audiencia, tono, llamado a la acción y la fuente de verificación correspondiente.
 
 ¿Aparecen datos innecesarios?
-Respuesta:
+Respuesta: NO. Se omiten campos internos de control como el ID numérico del registro del sistema, lo cual cuida la limpieza y el foco visual del tablero para el usuario general.
 
 Prueba 5: Cargar calendario
 
@@ -68,11 +72,12 @@ Resultado esperado:
 El calendario aparece como tarjetas con información resumida.
 
 Resultado observado:
+Se cargan dinámicamente las 6 tarjetas de la planificación editorial para las 2 semanas. Cada pieza editorial se muestra con su título de semana/día, tema, tipo de pieza, canal recomendado, público objetivo, propósito, llamado a la acción y fuente, excluyendo datos de administración interna.
 
 ¿Funcionó?
-Respuesta:
+Respuesta: SÍ
 
 Conclusión:
 ¿Qué mejora visual ayudó más a entender la información comunitaria?
 
-Respuesta:
+Respuesta: La organización del tablero mediante cuadrículas (grid) y la estilización de los contenedores como tarjetas independientes (.tarjeta-mensaje) con un borde lateral izquierdo diferenciador. Esta separación física y visual de cada mensaje comunitaria impide que los textos se aglomeren o se confundan entre sí, permitiendo al vecino escanear y asimilar rápidamente el título, el propósito y el llamado a la acción de cada propuesta de manera sumamente ágil y cómoda.

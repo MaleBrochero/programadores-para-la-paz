@@ -1,39 +1,39 @@
 Curaduría de datos visibles – Clase 22
 
-Nombre del estudiante:
-Fecha:
-Nombre de la rama:
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
 
 Revisa los datos disponibles en data/mensajes.json y data/calendario-editorial.json.
 
 1. ¿Qué datos sí deben mostrarse públicamente en el tablero de mensajes?
 
-Respuesta:
+Respuesta: Deben mostrarse el título de la propuesta, el cuerpo explicativo del mensaje, la categoría temática, el público objetivo (audiencia), el tono, el llamado a la acción (llamadoAccion) y la fuente de verificación.
 
 2. ¿Qué datos no deberían mostrarse públicamente o deben mostrarse con cuidado?
 
-Respuesta:
+Respuesta: No deben mostrarse datos de carácter personal y privado (números de identificación, correos, teléfonos o direcciones exactas), ni tampoco comentarios informales o notas de moderación interna que corresponden exclusivamente a la gestión de los administradores.
 
 3. ¿Por qué no todo lo que está en el JSON debe aparecer en la vista pública?
 
-Respuesta:
+Respuesta: Porque la sobrecarga de datos innecesarios en la pantalla genera saturación visual, dificulta que el usuario capte lo verdaderamente importante y arriesga la privacidad e intimidad de los proponentes, pudiendo desatar controversias o malentendidos.
 
 4. ¿Qué datos ayudan a la comunidad a entender el mensaje?
 
-Respuesta:
+Respuesta: El título (que da el contexto inmediato), el mensaje principal (que desarrolla la idea o el aviso) y el llamado a la acción (que concreta qué se espera que haga el vecino).
 
 5. ¿Qué datos ayudan a verificar la información?
 
-Respuesta:
+Respuesta: La fuente (que aporta trazabilidad y demuestra que los datos provienen de un canal serio) y la etiqueta de revisión editorial (que confirma que el mensaje ha sido validado bajo criterios estrictos).
 
 6. ¿Qué datos podrían ser internos para revisión editorial?
 
-Respuesta:
+Respuesta: El nombre o firma del responsable de la revisión técnica, las observaciones editoriales privadas (p. ej., "Confirmar fuente antes de publicar") y el ID del registro numérico.
 
 7. ¿Cómo se relaciona la minimización de datos visibles con la confianza comunitaria?
 
-Respuesta:
+Respuesta: Se relaciona al evidenciar que la plataforma protege y valora la privacidad de los vecinos, presentándoles solo información verídica, limpia y curada de manera responsable. Esto disipa temores a la exposición pública de datos personales, motivando una participación vecinal más confiada y segura.
 
 8. Escribe una regla de curaduría para el tablero:
 
-Respuesta:
+Respuesta: "Toda tarjeta desplegada públicamente en el tablero debe omitir obligatoriamente el ID interno del registro, los nombres de los revisores administrativos y cualquier dato de contacto privado del proponente, mostrando únicamente metadatos que garanticen la veracidad, claridad y utilidad pública del mensaje."

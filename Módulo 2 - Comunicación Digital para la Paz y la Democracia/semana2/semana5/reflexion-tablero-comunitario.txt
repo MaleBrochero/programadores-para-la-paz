@@ -1,8 +1,8 @@
 Reflexión sobre tablero comunitario – Clase 22
 
-Nombre del estudiante:
-Fecha:
-Nombre de la rama:
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
 
 Escribe una reflexión de 8 a 10 líneas respondiendo:
 
@@ -25,3 +25,4 @@ En tu respuesta menciona al menos cinco de estas ideas:
 - cultura de paz
 
 Respuesta:
+Un tablero de mensajes claro, accesible y seguro visualmente constituye la piedra angular de la participación ciudadana en la era digital. Al estructurar esta vitrina comunitaria bajo criterios de accesibilidad mínima y legibilidad óptima, aseguramos que la información sea verdaderamente inclusiva, permitiendo que cualquier persona recupere y comprenda los mensajes sin fatiga. Esta labor exige una rigurosa curaduría de información y la aplicación consciente de la minimización de datos visibles, ocultando datos de control técnico o personal sensibles que de otro modo atentarían contra la seguridad visual. Al presentar las propuestas vecinales mediante una jerarquía visual nítida y un lenguaje responsable y no estigmatizante, desactivamos la polarización y evitamos discursos divisivos en redes. Programar con este nivel de compromiso comunicativo no solo incrementa la confianza comunitaria en las plataformas locales, sino que consolida las bases para el diálogo constructivo y el fortalecimiento sistemático de una cultura de paz.
