@@ -1,0 +1,123 @@
+Calendario editorial de 2 semanas – Clase 21
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Tema general de la campaña comunitaria:
+
+Respuesta: Alfabetización Mediática, Lenguaje Claro y Convivencia Armoniosa en las Redes Comunitarias de María Leal.
+
+Pieza 1
+
+Semana: 1
+Día: Lunes
+Fecha: 25 de mayo de 2026
+Tema: Verificación de información
+Tipo de pieza: Aviso
+Canal: Moodle o red comunitaria
+Público objetivo: comunidad general
+Propósito: Prevenir la circulación de información no verificada.
+Responsable: María Leal - Coordinadora Editorial
+Mensaje: "Antes de reenviar información de alerta en nuestro grupo de WhatsApp, te invitamos a detenerte un minuto. Confirma la fecha del hecho, solicita la fuente original y ayuda a mantener la calma en nuestra comunidad. ¡Cuidar el diálogo virtual es una tarea colectiva!"
+Tono: preventivo
+Llamado a la acción: Verifica la fuente antes de compartir.
+Fuente o criterio de verificación: Canal institucional comunitario
+Observaciones editoriales: Confirmar fuente, fecha y responsable antes de publicar.
+¿Usa lenguaje responsable y no estigmatizante?
+Respuesta: SÍ. Apela pacíficamente a la responsabilidad individual de verificar los datos, sin emitir juicios de valor ni culpabilizar a ningún grupo social.
+
+Pieza 2
+
+Semana: 1
+Día: Miércoles
+Fecha: 27 de mayo de 2026
+Tema: Convivencia digital
+Tipo de pieza: Mensaje pedagógico
+Canal: Grupo comunitario
+Público objetivo: jóvenes participantes
+Propósito: Promover participación respetuosa en espacios digitales.
+Responsable: Equipo de comunicaciones
+Mensaje: "Nuestras opiniones tienen poder. Expresémonos usando un lenguaje claro, respetuoso y constructivo. Evitemos los señalamientos ofensivos y construyamos juntos redes digitales seguras y libres de insultos."
+Tono: pedagogico
+Llamado a la acción: Participa con respeto y evita ataques personales.
+Fuente o criterio de verificación: Equipo de comunicaciones
+Observaciones editoriales: Evitar lenguaje acusatorio o estigmatizante.
+¿Usa lenguaje responsable y no estigmatizante?
+Respuesta: SÍ. Utiliza un tono motivador e integrador para los jóvenes, centrándose en el empoderamiento positivo en lugar de la recriminación.
+
+Pieza 3
+
+Semana: 1
+Día: Viernes
+Fecha: 29 de mayo de 2026
+Tema: Participación ciudadana
+Tipo de pieza: Convocatoria
+Canal: Mini-sitio comunitario
+Público objetivo: comunidad general
+Propósito: Invitar a la comunidad a enviar propuestas claras.
+Responsable: Docentes de comunicaciones
+Mensaje: "¡Queremos escuchar tu voz! Ingresa a nuestro mini-sitio comunitario y envía tus propuestas e ideas para mejorar el barrio. Todas las iniciativas pasarán por una revisión editorial responsable para asegurar un diálogo constructivo."
+Tono: convocante
+Llamado a la acción: Envía una propuesta clara y con propósito comunitario.
+Fuente o criterio de verificación: Formulario comunitario
+Observaciones editoriales: Aclarar que las propuestas tendrán revisión editorial.
+¿Usa lenguaje responsable y no estigmatizante?
+Respuesta: SÍ. Es inclusivo, transparente sobre las reglas editoriales previas y promueve la participación activa y abierta de todos los vecinos.
+
+Pieza 4
+
+Semana: 2
+Día: Lunes
+Fecha: 1 de junio de 2026
+Tema: Seguimiento comunitario
+Tipo de pieza: Resumen
+Canal: Mini-sitio comunitario
+Público objetivo: líderes comunitarios
+Propósito: Mostrar avances sin exponer datos sensibles.
+Responsable: Equipo técnico y comunicaciones
+Mensaje: "Presentamos el reporte de propuestas recibidas esta semana. Analizamos las temáticas más comunes para optimizar la gestión del barrio, velando estrictamente por el anonimato y la privacidad de cada participante."
+Tono: informativo
+Llamado a la acción: Revisa las categorías más frecuentes.
+Fuente o criterio de verificación: API comunitaria
+Observaciones editoriales: No publicar datos personales innecesarios.
+¿Usa lenguaje responsable y no estigmatizante?
+Respuesta: SÍ. Tiene un enfoque exclusivamente estadístico y neutral, protegiendo escrupulosamente los datos personales de la comunidad.
+
+Pieza 5
+
+Semana: 2
+Día: Miércoles
+Fecha: 3 de junio de 2026
+Tema: Lenguaje responsable
+Tipo de pieza: Recordatorio
+Canal: Red comunitaria
+Público objetivo: jóvenes participantes
+Propósito: Reforzar criterios de lenguaje responsable y no estigmatizante.
+Responsable: Docentes de comunicaciones
+Mensaje: "Un lenguaje constructivo une voluntades. Al redactar tus ideas, enfócate en plantear soluciones en lugar de generalizar o atacar a colectivos. ¡La convivencia digital sana la construimos palabra por palabra!"
+Tono: pedagogico
+Llamado a la acción: Evita mensajes ofensivos o estigmatizantes.
+Fuente o criterio de verificación: Reglas editoriales mínimas
+Observaciones editoriales: Incluir ejemplo de redacción adecuada.
+¿Usa lenguaje responsable y no estigmatizante?
+Respuesta: SÍ. Enfatiza los beneficios prácticos de la no estigmatización y enseña a canalizar propuestas desde la empatía y la lógica de soluciones.
+
+Pieza 6
+
+Semana: 2
+Día: Viernes
+Fecha: 5 de junio de 2026
+Tema: Cierre de difusión responsable
+Tipo de pieza: Balance
+Canal: Moodle o mini-sitio
+Público objetivo: comunidad general
+Propósito: Cerrar la campaña y recoger aprendizajes.
+Responsable: Equipo docente
+Mensaje: "Finalizamos nuestra campaña de Convivencia Digital. Agradecemos a todos los vecinos que participaron enviando sus ideas y sumándose a este gran aprendizaje de lenguaje responsable. Sigamos cuidando el respeto en nuestras redes."
+Tono: informativo
+Llamado a la acción: Consulta el balance y propone mejoras.
+Fuente o criterio de verificación: Equipo de seguimiento
+Observaciones editoriales: Revisar consistencia con piezas anteriores.
+¿Usa lenguaje responsable y no estigmatizante?
+Respuesta: SÍ. Es sumamente integrador, respetuoso y agradece colectivamente los esfuerzos de co-creación pacífica sin distinciones.

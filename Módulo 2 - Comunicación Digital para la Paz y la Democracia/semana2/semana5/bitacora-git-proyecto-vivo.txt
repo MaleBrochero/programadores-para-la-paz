@@ -1,0 +1,61 @@
+Bitácora Git del proyecto vivo – Clase 21
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+1. Nombre del repositorio único de Semana 5:
+
+Respuesta: programadores-para-la-paz-mini-sitio-comunitario
+
+2. ¿Qué rama actualizan los docentes?
+
+Respuesta: La rama main
+
+3. ¿Qué rama usa cada estudiante para trabajar?
+
+Respuesta: Su propia rama personal con formato nombres_apellidos (en mi caso, maria_leal_brochero).
+
+4. Comando usado para clonar el repositorio:
+
+Respuesta: git clone https://github.com/mmgranda/programadores-para-la-paz-mini-sitio-comunitario.git
+
+5. Comando usado para entrar a la carpeta del proyecto:
+
+Respuesta: cd programadores-para-la-paz-mini-sitio-comunitario
+
+6. Comando usado para crear tu rama personal:
+
+Respuesta: git checkout -b maria_leal_brochero
+
+7. Comando usado para verificar la rama actual:
+
+Respuesta: git branch
+
+8. Comando que se usará desde la Clase 22 para traer cambios de main:
+
+Respuesta: git pull origin main
+
+9. Explica con tus palabras qué significa fast-forward:
+
+Respuesta: Significa que Git puede fusionar y aplicar los nuevos cambios de la rama main a tu rama personal de forma limpia y directa, simplemente avanzando el puntero de tu rama actual en el historial. Esto ocurre cuando no existen cambios locales conflictivos y el historial es perfectamente secuencial, evitando la necesidad de crear un commit de mezcla (merge commit).
+
+10. ¿Por qué no se debe trabajar directamente en main?
+
+Respuesta: Porque la rama main funciona como el canal troncal oficial que los docentes actualizan periódicamente con el código de base. Si un estudiante trabaja directamente en main, perderá la trazabilidad limpia de sus tareas, sufrirá de múltiples conflictos de fusión al intentar actualizar su código y correrá el riesgo de perder o corromper su trabajo académico.
+
+11. Comando usado para revisar cambios al final:
+
+Respuesta: git status
+
+12. Comando usado para agregar cambios:
+
+Respuesta: git add .
+
+13. Comando usado para crear commit:
+
+Respuesta: git commit -m "Clase 21 inicio proyecto unico mini sitio"
+
+14. Comando usado para publicar tu rama:
+
+Respuesta: git push -u origin maria_leal_brochero
