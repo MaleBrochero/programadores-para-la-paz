@@ -1,4 +1,4 @@
-Bitácora Git del proyecto vivo – Clase 21 y Clase 22
+Bitácora Git del proyecto vivo – Clase 21, Clase 22 y Clase 23
 
 Nombre del estudiante: María Leal Brochero
 Fecha: 18/05/2026
@@ -90,5 +90,16 @@ Respuesta: git branch
 Respuesta: git commit -m "Clase 22 tablero mensajes accesibilidad"
 
 21. Comando utilizado para enviar los cambios consolidados a GitHub:
+
+Respuesta: git push
+
+
+SECCIÓN 3: INTEGRACIÓN FRONTEND-BACKEND Y API PROPIA (Clase 23)
+
+22. Comando usado para guardar cambios y documentar la integración en la Clase 23:
+
+Respuesta: git commit -m "Clase 23 integracion frontend backend API propia"
+
+23. Comando para sincronizar y enviar de nuevo los cambios del monorepo a GitHub:
 
 Respuesta: git push
