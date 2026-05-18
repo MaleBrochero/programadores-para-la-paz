@@ -1,33 +1,120 @@
 const express = require("express")
+const fs = require("fs")
 
 const app = express()
 const puerto = 3000
+const rutaPropuestas = "data/propuestas.json"
 
-app.use(express.text())
+app.use(express.json())
 app.use(express.static("public"))
 
-app.get("/api/campania", (req, res) => {
-  res.send("Campaña de María Leal: Fomentar el uso de lenguaje claro, la convivencia digital respetuosa y la participación activa de los vecinos en la verificación de noticias.")
-})
+function leerPropuestas() {
+  const contenido = fs.readFileSync(rutaPropuestas, "utf-8")
+  return JSON.parse(contenido)
+}
 
-app.get("/api/avisos", (req, res) => {
-  res.send("Aviso comunitario: verifica la fuente, confirma la fecha y usa lenguaje respetuoso.")
+function guardarPropuestas(propuestas) {
+  const contenido = JSON.stringify(propuestas, null, 2)
+  fs.writeFileSync(rutaPropuestas, contenido, "utf-8")
+}
+
+const categoriasPermitidas = [
+  "prevencion-desinformacion",
+  "cultura-de-paz",
+  "participacion-ciudadana",
+  "convivencia-digital"
+]
+
+const tonosPermitidos = [
+  "informativo",
+  "pedagogico",
+  "preventivo",
+  "convocante",
+  "respetuoso"
+]
+
+app.get("/api/propuestas", (req, res) => {
+  const propuestas = leerPropuestas()
+  res.json(propuestas)
 })
 
 app.post("/api/propuestas", (req, res) => {
-  const propuesta = req.body
+  const propuestas = leerPropuestas()
 
-  console.log("Propuesta recibida desde el cliente web:")
-  console.log(propuesta)
+  if (!req.body.titulo || req.body.titulo.trim() === "") {
+    return res.status(400).json({
+      mensaje: "Falta el título. Toda propuesta debe tener un título claro."
+    })
+  }
 
-  res.send("Propuesta recibida por la plataforma comunitaria: " + propuesta)
+  if (!req.body.mensaje || req.body.mensaje.trim() === "") {
+    return res.status(400).json({
+      mensaje: "Falta el mensaje. Toda propuesta debe explicar su propósito comunitario."
+    })
+  }
+
+  if (!req.body.categoria || !categoriasPermitidas.includes(req.body.categoria)) {
+    return res.status(400).json({
+      mensaje: "La categoría es obligatoria y debe corresponder a una opción válida."
+    })
+  }
+
+  if (!req.body.audiencia || req.body.audiencia.trim() === "") {
+    return res.status(400).json({
+      mensaje: "Falta la audiencia. Todo mensaje debe indicar a quién va dirigido."
+    })
+  }
+
+  if (!req.body.tono || !tonosPermitidos.includes(req.body.tono)) {
+    return res.status(400).json({
+      mensaje: "El tono es obligatorio y debe corresponder a una opción válida."
+    })
+  }
+
+  if (!req.body.llamadoAccion || req.body.llamadoAccion.trim() === "") {
+    return res.status(400).json({
+      mensaje: "Falta el llamado a la acción. La propuesta debe indicar qué se espera de la comunidad."
+    })
+  }
+
+  if (!req.body.autor || req.body.autor.trim() === "") {
+    return res.status(400).json({
+      mensaje: "Falta el autor o grupo responsable de la propuesta."
+    })
+  }
+
+  const nuevaPropuesta = {
+    id: propuestas.length + 1,
+    titulo: req.body.titulo.trim(),
+    mensaje: req.body.mensaje.trim(),
+    categoria: req.body.categoria,
+    audiencia: req.body.audiencia.trim(),
+    tono: req.body.tono,
+    llamadoAccion: req.body.llamadoAccion.trim(),
+    autor: req.body.autor.trim(),
+    estado: "recibida",
+    revisionEditorial: "pendiente",
+    fecha: new Date().toISOString()
+  }
+
+  propuestas.push(nuevaPropuesta)
+  guardarPropuestas(propuestas)
+
+  res.status(201).json({
+    mensaje: "¡Muchas gracias! Tu propuesta de participación ha sido recibida y guardada de forma segura por María Leal. Queda registrada oficialmente en nuestro archivo JSON y en proceso de revisión bajo los criterios de comunicación digital responsable y no estigmatizante de nuestra comunidad.",
+    propuesta: nuevaPropuesta
+  })
 })
 
 app.use((req, res) => {
-  res.status(404).send("Ruta no encontrada. Revisa la dirección solicitada.")
+  res.status(404).json({
+    mensaje: "Ruta no encontrada. Revisa la dirección solicitada."
+  })
 })
 
 app.listen(puerto, () => {
-  console.log("Servidor Express funcionando en http://localhost:3000")
-  console.log("Abre http://localhost:3000 en el navegador.")
+  console.log("API comunitaria funcionando en http://localhost:3000")
+  console.log("Rutas disponibles:")
+  console.log("GET  /api/propuestas")
+  console.log("POST /api/propuestas")
 })

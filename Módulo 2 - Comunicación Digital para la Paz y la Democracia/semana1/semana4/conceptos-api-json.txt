@@ -1,0 +1,55 @@
+Conceptos básicos de API, JSON y validación – Módulo 2 Semana 1 Día 4
+
+Nombre del estudiante: María Leal Brochero
+Fecha: 18/05/2026
+Nombre de la rama: maria_leal_brochero
+
+Responde con tus propias palabras.
+
+1. ¿Qué es una API?
+
+Respuesta: Una Interfaz de Programación de Aplicaciones (API) es un conjunto de reglas y protocolos que permite que diferentes programas o partes de un sistema (como una página web cliente y un servidor Express) se comuniquen, interactúen y compartan datos entre sí de forma estructurada y predecible.
+
+2. ¿Por qué se dice que una API permite comunicación entre cliente y servidor?
+
+Respuesta: Porque actúa como una ventanilla de atención que define qué solicitudes puede hacer el cliente (como el navegador enviando un formulario) y qué tipo de respuestas formales le va a devolver el servidor (como confirmaciones o códigos de estado), permitiendo un intercambio limpio de datos.
+
+3. ¿Qué hace la ruta GET /api/propuestas?
+
+Respuesta: Lee todas las propuestas comunitarias almacenadas en el servidor y las envía de vuelta en formato JSON al navegador cliente para que este las pueda mostrar dinámicamente en la pantalla.
+
+4. ¿Qué hace la ruta POST /api/propuestas?
+
+Respuesta: Recibe los datos de una nueva propuesta enviada por el usuario desde el formulario, valida que todos los campos requeridos cumplan las condiciones editoriales, la incorpora a la lista general y la guarda de manera permanente en el archivo JSON.
+
+5. ¿Qué hace express.json() en esta práctica?
+
+Respuesta: Es un software intermedio (middleware) que interpreta automáticamente el cuerpo de las solicitudes que llegan en formato JSON (como el formulario enviado) y las transforma en un objeto de JavaScript accesible a través de req.body.
+
+6. ¿Qué hace JSON.stringify?
+
+Respuesta: Toma un objeto o estructura de datos de JavaScript (como nuestro arreglo de propuestas) y lo convierte en una cadena de texto plana con formato JSON, lo cual es necesario para poder escribirlo en un archivo físico del disco o transmitirlo por la red.
+
+7. ¿Qué hace JSON.parse?
+
+Respuesta: Realiza la operación contraria a stringify: toma una cadena de texto en formato JSON y la convierte de vuelta en un objeto o arreglo de JavaScript que nuestro código puede manipular, recorrer o editar.
+
+8. ¿Qué hace fs.readFileSync?
+
+Respuesta: Lee de forma síncrona el contenido completo de un archivo del disco de almacenamiento local y lo entrega como una cadena de texto legible o un buffer.
+
+9. ¿Qué hace fs.writeFileSync?
+
+Respuesta: Escribe datos síncronamente en un archivo físico en el disco local, creando el archivo si no existe, o reemplazando todo su contenido actual si ya existía.
+
+10. ¿Por qué este ejercicio todavía no es una base de datos?
+
+Respuesta: Porque el almacenamiento de la información se hace en un archivo de texto plano JSON que se sobrescribe por completo en cada cambio de manera síncrona. Carece de mecanismos de seguridad ante accesos concurrentes de múltiples usuarios, no tiene indexación ni optimización de consultas, y no ofrece soporte para relaciones o transacciones complejas que sí brindan los motores de bases de datos profesionales (como MySQL o MongoDB).
+
+11. ¿Qué significa validar campos antes de guardar una propuesta?
+
+Respuesta: Significa comprobar en el servidor que los datos recibidos del cliente cumplan con criterios mínimos indispensables (como que no estén vacíos, que posean una longitud adecuada o que pertenezcan a una categoría o tono autorizados) antes de permitir que se guarden en el almacenamiento permanente.
+
+12. ¿Por qué una API comunitaria debe responder con mensajes claros cuando falta información?
+
+Respuesta: Para guiar de manera responsable, clara y pedagógica al participante en la corrección de su envío, garantizando una interacción digital amigable y transparente, y evitando frustraciones o el almacenamiento de datos basura en la plataforma.

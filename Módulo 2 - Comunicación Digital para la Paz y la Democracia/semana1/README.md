@@ -1,13 +1,26 @@
-# Programadores para la Paz – Módulo 2 Semana 1 Día 2
+# Programadores para la Paz – Módulo 2 Semana 1 Día 4
 
 ## Actividad
-Fetch: conectar un cliente web con un servidor Express.
+API básica: agregar propuestas comunitarias a un archivo JSON desde un formulario con validaciones mínimas.
 
 ## Objetivo
-Comprender qué es fetch y cómo permite que una página web consulte información y envíe propuestas a un servidor Express.
+Comprender qué es una API en nivel introductorio y cómo una página web puede enviar información a un servidor Express para agregar un nuevo registro a un archivo JSON.
 
 ## Enfoque ciudadano
-Esta práctica se conecta con comunicación digital responsable. Una plataforma comunitaria debe permitir consultar avisos, revisar campañas y enviar propuestas con respuestas claras.
+Esta práctica se conecta con comunicación digital responsable. Un formulario comunitario permite recibir propuestas, pero recibir propuestas implica responsabilidad: claridad, transparencia, trazabilidad, lenguaje responsable y no estigmatizante, reglas editoriales y cuidado de la información.
+
+## Temas de comunicaciones trabajados
+
+- Narrativa digital
+- Audiencia
+- Tono
+- Llamado a la acción
+- Lenguaje responsable y no estigmatizante
+- Reglas editoriales mínimas
+- Matriz de criterios editoriales
+- Cultura de paz
+- Participación ciudadana
+- Prevención de desinformación
 
 ## Importante
 
@@ -18,17 +31,20 @@ No se trabajará autenticación.
 No se trabajará login.
 No se trabajará despliegue.
 No se trabajará seguridad avanzada.
-No se trabajará React.
-No se trabajará frontend avanzado.
+No se trabajará CRUD completo.
+No se eliminarán registros.
+No se editarán registros.
+No se trabajarán datos sensibles.
 
 ## Comando nuevo del día
 
-npm install
+npm run api
 
-Este comando instala las dependencias necesarias del proyecto.
+Este comando levanta el servidor Express definido en package.json.
 
 ## Comandos que se siguen practicando
 
+npm install
 npm start
 git status
 git add .
@@ -61,14 +77,16 @@ No debes enviar evidencias por otro medio.
 ## Archivos que debes trabajar
 
 - server.js
+- data/propuestas.json
 - public/index.html
 - public/app.js
 - package.json
 - package-lock.json
-- semana4/conceptos-fetch.txt
-- semana4/bitacora-comando-dia2.txt
-- semana4/reflexion-comunicacion-fetch.txt
-- semana4/analisis-mensaje-comunitario.txt
+- semana4/conceptos-api-json.txt
+- semana4/bitacora-comando-dia4.txt
+- semana4/matriz-criterios-editoriales.txt
+- semana4/protocolo-comunicacion-responsable.txt
+- semana4/reflexion-api-participacion.txt
 
 ## Comandos principales
 
@@ -78,8 +96,8 @@ cd NOMBRE_DEL_REPOSITORIO
 git checkout -b nombres_apellidos
 git branch
 npm install
-npm start
+npm run api
 git status
 git add .
-git commit -m "Fetch cliente servidor modulo 2 semana 1 dia 2"
+git commit -m "API formulario JSON modulo 2 semana 1 dia 4"
 git push -u origin nombres_apellidos

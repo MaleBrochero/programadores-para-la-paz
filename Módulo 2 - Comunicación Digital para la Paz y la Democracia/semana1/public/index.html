@@ -3,35 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cliente Web Comunitario</title>
+  <title>Formulario Comunitario</title>
 </head>
 <body>
   <main>
-    <h1>Cliente web comunitario</h1>
+    <h1>Formulario comunitario de propuestas</h1>
 
     <p>
-      Esta página usa fetch para consultar información del servidor y enviar propuestas comunitarias.
+      Esta página permite consultar propuestas guardadas en JSON y enviar una nueva propuesta al servidor.
     </p>
 
     <section>
-      <h2>Consultar información</h2>
+      <h2>Enviar nueva propuesta</h2>
 
-      <button id="btnCampania">Consultar campaña</button>
-      <button id="btnAvisos">Consultar avisos</button>
+      <label for="titulo">Título de la propuesta:</label>
+      <br>
+      <input id="titulo" type="text" value="Talleres de Convivencia Digital y Lenguaje Claro">
+      <br><br>
 
-      <p id="respuestaConsulta">Aquí aparecerá la respuesta del servidor.</p>
+      <label for="mensaje">Mensaje de la propuesta:</label>
+      <br>
+      <textarea id="mensaje" rows="5" cols="60">Capacitar a jóvenes y adultos de la comunidad en el uso de un lenguaje respetuoso, preventivo y claro para evitar la polarización en redes sociales y la propagación de rumores.</textarea>
+      <br><br>
+
+      <label for="categoria">Categoría:</label>
+      <br>
+      <select id="categoria">
+        <option value="prevencion-desinformacion">Prevención de desinformación</option>
+        <option value="cultura-de-paz">Cultura de paz</option>
+        <option value="participacion-ciudadana">Participación ciudadana</option>
+        <option value="convivencia-digital">Convivencia digital</option>
+      </select>
+      <br><br>
+
+      <label for="audiencia">Audiencia principal:</label>
+      <br>
+      <input id="audiencia" type="text" value="comunidad general">
+      <br><br>
+
+      <label for="tono">Tono del mensaje:</label>
+      <br>
+      <select id="tono">
+        <option value="informativo">Informativo</option>
+        <option value="pedagogico">Pedagógico</option>
+        <option value="preventivo">Preventivo</option>
+        <option value="convocante">Convocante</option>
+        <option value="respetuoso">Respetuoso</option>
+      </select>
+      <br><br>
+
+      <label for="llamadoAccion">Llamado a la acción:</label>
+      <br>
+      <textarea id="llamadoAccion" rows="3" cols="60">Consulta la información oficial antes de compartir mensajes en grupos comunitarios.</textarea>
+      <br><br>
+
+      <label for="autor">Autor o grupo:</label>
+      <br>
+      <input id="autor" type="text" value="María Leal - Red de Convivencia">
+      <br><br>
+
+      <button id="btnEnviar">Enviar propuesta</button>
+
+      <p id="respuestaEnvio">Aquí aparecerá la respuesta del servidor.</p>
     </section>
 
     <section>
-      <h2>Enviar propuesta</h2>
+      <h2>Propuestas registradas</h2>
 
-      <label for="propuesta">Escribe una propuesta comunitaria:</label>
-      <br>
-      <textarea id="propuesta" rows="5" cols="50">Propuesta de María Leal: Crear talleres virtuales de alfabetización digital y detección de noticias falsas.</textarea>
-      <br>
-      <button id="btnEnviar">Enviar propuesta</button>
+      <button id="btnCargar">Cargar propuestas</button>
 
-      <p id="respuestaEnvio">Aquí aparecerá la confirmación del servidor.</p>
+      <div id="contenedorPropuestas">
+        Aquí aparecerán las propuestas guardadas.
+      </div>
+    </section>
+
+    <section>
+      <h2>Prueba de validaciones</h2>
+      <p>
+        Para probar las validaciones, borra el título o el mensaje e intenta enviar la propuesta.
+        El servidor debe responder con un mensaje claro.
+      </p>
     </section>
   </main>
 
