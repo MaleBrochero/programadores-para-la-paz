@@ -1,0 +1,26 @@
+5 prácticas de seguridad para plataformas digitales comunitarias
+
+1. No exponer datos personales
+Los datos de los participantes, como nombres, teléfonos o ubicaciones, deben almacenarse de forma
+cifrada y solo ser accesibles para quienes tengan autorización explícita. Publicar o filtrar
+información personal puede poner en riesgo a los miembros de la comunidad.
+
+2. Proteger credenciales de acceso
+Las contraseñas de administración de la plataforma deben ser fuertes, únicas y gestionadas con
+herramientas seguras. Nunca deben escribirse en archivos de texto plano ni compartirse por canales
+de mensajería no cifrados.
+
+3. Usar conexiones seguras (HTTPS)
+Toda comunicación entre los usuarios y la plataforma debe realizarse a través de conexiones cifradas
+con HTTPS. Esto impide que terceros intercepten la información transmitida, como reportes,
+mensajes o datos de formularios.
+
+4. Registrar accesos y actividad del sistema
+Mantener logs de quién accede a la plataforma, cuándo y desde dónde permite detectar comportamientos
+sospechosos a tiempo. Los registros también son útiles para investigar incidentes de seguridad
+y demostrar transparencia en la gestión del sistema.
+
+5. Limitar el acceso a información sensible
+No todos los usuarios necesitan acceder a toda la información. Aplicar el principio de mínimo
+privilegio significa que cada persona solo puede ver y modificar lo que necesita para cumplir
+su rol, reduciendo el riesgo de filtraciones accidentales o malintencionadas.

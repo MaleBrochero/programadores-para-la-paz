@@ -1,0 +1,13 @@
+Buenas prácticas de seguridad digital
+
+1. Proteger contraseñas
+Las contraseñas deben ser largas, únicas y combinar letras, números y símbolos.
+Nunca deben compartirse ni reutilizarse en diferentes servicios.
+
+2. No compartir credenciales
+Las credenciales de acceso a sistemas y servidores son personales e intransferibles.
+Compartirlas aumenta el riesgo de accesos no autorizados y dificulta rastrear responsabilidades.
+
+3. Mantener software actualizado
+Las actualizaciones del sistema operativo y las aplicaciones corrigen vulnerabilidades de seguridad conocidas.
+Un sistema desactualizado es un blanco fácil para ataques externos.

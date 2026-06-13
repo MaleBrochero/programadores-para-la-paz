@@ -1,0 +1,9 @@
+La seguridad digital es un pilar fundamental para cualquier plataforma tecnológica que sirva a comunidades o procesos participativos, porque estas plataformas manejan información sensible de personas reales.
+Cuando una comunidad usa una herramienta digital para reportar situaciones, organizar acciones colectivas o compartir testimonios, está depositando su confianza en quienes construyen y administran esa tecnología.
+Una falla de seguridad puede exponer datos personales, comprometer la integridad de los procesos y poner en riesgo físico a participantes, especialmente en contextos de conflicto o vulnerabilidad social.
+Además, una plataforma insegura puede ser manipulada para desinformar a la comunidad, alterar registros o bloquear el acceso de usuarios legítimos en momentos críticos.
+La protección de credenciales, el uso de conexiones cifradas y el control de accesos no son tecnicismos menores, sino compromisos éticos con las personas que dependen de esos sistemas.
+En procesos democráticos y participativos, la confianza en la tecnología es tan importante como la confianza entre las personas: si la plataforma falla o es vulnerada, el proceso pierde legitimidad.
+Linux y las herramientas de código abierto permiten construir plataformas más transparentes y auditables, donde cualquier persona con conocimiento técnico puede verificar que el sistema funciona correctamente.
+Implementar buenas prácticas de seguridad desde el inicio del desarrollo es mucho más económico y efectivo que intentar remediar un ataque después de que ha ocurrido.
+En definitiva, proteger una plataforma comunitaria es proteger a las personas que la usan, su privacidad, su participación y su derecho a organizarse con seguridad en el mundo digital.

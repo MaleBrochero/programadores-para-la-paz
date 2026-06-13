@@ -1,0 +1,21 @@
+Información del sistema - Semana 8
+
+Comando: uname -a
+Este comando muestra información completa sobre el kernel y el sistema operativo en uso.
+La salida incluye el nombre del sistema operativo, el nombre del equipo (hostname), la versión del kernel,
+la fecha de compilación del kernel y la arquitectura del procesador (por ejemplo, x86_64).
+Es especialmente útil cuando se administra un servidor, porque permite identificar rápidamente
+qué versión del sistema está corriendo y si necesita actualizaciones de seguridad.
+
+Comando: whoami
+Este comando muestra el nombre del usuario que está ejecutando la sesión activa en la terminal.
+Es importante conocer con qué usuario se está trabajando porque en Linux los permisos dependen del usuario:
+un usuario normal tiene acceso limitado, mientras que el usuario root tiene control total del sistema.
+En la administración de servidores, saber quién ejecuta cada proceso es fundamental para controlar
+el acceso, evitar errores y mantener la seguridad del sistema.
+
+¿Por qué es útil conocer la información del sistema al administrar un servidor?
+Conocer la información del sistema permite tomar decisiones informadas sobre actualizaciones,
+compatibilidad de software y seguridad. Saber qué kernel está corriendo ayuda a identificar
+vulnerabilidades conocidas. Saber con qué usuario se trabaja evita operaciones accidentales
+con permisos elevados que podrían dañar el sistema o comprometer su seguridad.
