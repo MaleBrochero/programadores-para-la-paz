@@ -1,0 +1,9 @@
+Construir herramientas tecnológicas propias usando tecnologías abiertas como Node.js es fundamental para las comunidades e iniciativas ciudadanas porque les permite tener autonomía y control sobre sus propios procesos de comunicación y organización.
+Cuando una comunidad depende de plataformas externas, queda sujeta a las condiciones, costos y decisiones de terceros que no siempre respetan sus necesidades ni sus valores.
+Node.js, al ser gratuito y de código abierto, elimina esas barreras económicas y permite que cualquier persona con conocimientos básicos pueda construir soluciones adaptadas a su realidad.
+Esto es especialmente relevante para iniciativas de paz, donde la transparencia y la confianza son esenciales: una herramienta propia puede diseñarse para proteger la privacidad de sus participantes.
+Además, desarrollar tecnología comunitaria fortalece capacidades locales, ya que las personas aprenden a entender y modificar los sistemas que usan en su vida cotidiana.
+Esa apropiación tecnológica transforma a los ciudadanos de simples usuarios en creadores activos, lo cual tiene un impacto profundo en la participación democrática.
+Las comunidades que construyen sus propias herramientas también pueden adaptarlas rápidamente cuando cambian sus necesidades, sin esperar que una empresa externa haga actualizaciones.
+En contextos de construcción de paz, contar con canales propios de comunicación y registro puede ser crucial para documentar acuerdos, denuncias y procesos de reconciliación.
+En definitiva, aprender a usar Node.js no es solo aprender a programar: es aprender a ejercer soberanía tecnológica al servicio de la democracia y la convivencia.
