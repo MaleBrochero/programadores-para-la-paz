@@ -1,0 +1,23 @@
+Prueba de la ruta POST /registro - Semana 6
+
+Para probar la ruta se envió una petición POST a http://localhost:3000/registro
+usando Thunder Client en Visual Studio Code, con el siguiente JSON en el cuerpo:
+
+{
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+Respuesta que devolvió el servidor:
+
+{
+  "estado": "Datos recibidos",
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+El servidor recibió correctamente los datos enviados en el cuerpo de la petición POST.
+Gracias a express.json() y req.body, Express pudo leer los campos "nombre" y "mensaje"
+del JSON enviado y devolverlos dentro de un objeto de respuesta con el estado "Datos recibidos".
+Esto confirma que la ruta /registro funciona correctamente y está lista para recibir
+información enviada por usuarios desde cualquier cliente o aplicación.

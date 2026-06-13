@@ -1,0 +1,14 @@
+{
+  "name": "programadores-para-la-paz-semana6",
+  "version": "1.0.0",
+  "description": "Servidor con rutas POST para recibir datos JSON en la semana 6 del programa Programadores para la Paz.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Programa Capacitación en Democracia y Tecnología",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}

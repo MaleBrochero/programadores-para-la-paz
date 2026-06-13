@@ -1,0 +1,9 @@
+Que las plataformas tecnológicas puedan recibir reportes e información de manera estructurada es fundamental para transformar la participación ciudadana en algo concreto y efectivo.
+Cuando los ciudadanos pueden enviar datos organizados, como el tipo de incidencia y su descripción, los equipos comunitarios y las autoridades pueden procesar esa información de forma rápida y eficiente.
+Sin estructura, los reportes llegan dispersos por mensajes informales, correos o llamadas, lo que dificulta priorizarlos, darles seguimiento y medir su impacto.
+El uso de JSON como formato de intercambio permite que la información enviada por los ciudadanos pueda ser leída automáticamente por sistemas digitales, sin necesidad de interpretación manual.
+Esto también permite crear historiales y estadísticas: si muchos ciudadanos reportan el mismo tipo de problema, la plataforma puede identificarlo como una prioridad colectiva.
+La estructuración de datos favorece la transparencia, ya que cada reporte queda registrado con su contenido exacto y puede ser consultado en cualquier momento por quien tenga acceso.
+En comunidades con procesos participativos activos, una plataforma que recibe reportes estructurados actúa como un canal oficial y confiable, distinto a los rumores o canales informales.
+También facilita la integración con otras herramientas: los datos estructurados pueden exportarse, visualizarse en mapas o enviarse automáticamente a las entidades responsables de resolverlos.
+En definitiva, la capacidad de recibir información estructurada convierte una aplicación web en una herramienta real de participación, capaz de conectar las necesidades de la comunidad con quienes tienen el poder de actuar.
