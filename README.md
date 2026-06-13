@@ -12,31 +12,34 @@
 
 ---
 
-## 📂 Estructura del Repositorio e Historial de Progreso
+## 📂 Estructura del Repositorio
 
 El repositorio está estructurado en módulos y semanas formativas siguiendo las directrices institucionales:
 
-### 📘 Módulo 1 - Tecnologías de la Comunicación y Desarrollo de Aplicaciones Web (Semanas 1-3)
-* **semana1 (Clases 1-5):** Introducción a la programación, algoritmos básicos, diagramas de flujo y reflexiones cívicas iniciales.
-* **semana2 (Clases 6-10):** Comandos avanzados de terminal, control de versiones con Git y GitHub, maquetación HTML y estilos en cascada (CSS).
-* **semana3 (Clases 11-15):** Estructuras de control en JavaScript (arreglos, ciclos `for` y `while`), y fundamentos de comunicación cliente/servidor (servidores HTTP en Node.js, peticiones GET y POST).
+### 📘 Módulo 1 - Tecnologías de la Comunicación y Desarrollo de Aplicaciones Web
+* **semana1:** Introducción a la programación, algoritmos básicos, diagramas de flujo y reflexiones cívicas iniciales.
+* **semana2:** Comandos avanzados de terminal, control de versiones con Git y GitHub, maquetación HTML y estilos en cascada (CSS).
+* **semana3:** Estructuras de control en JavaScript (arreglos, ciclos `for` y `while`), y fundamentos de comunicación cliente/servidor (servidores HTTP en Node.js, peticiones GET y POST).
 
-### 📙 Módulo 2 - Comunicación Digital para la Paz y la Democracia (Semanas 4-5 / En Progreso 🚧)
-* **semana1 (Semana 4 del curso - Clases 16-20):** 
-  * Servidores web dinámicos con **Express**.
-  * Consumo de APIs públicas de participación comunitaria usando `fetch`.
-  * Persistencia en archivos locales JSON, validaciones de seguridad básicas y manejo formal de promesas con `.then()` y `.catch()`.
-* **semana2 (Semana 5 del curso - Clases 21-25 / Actualizado hasta Clase 23):**
-  * **Clase 21 (Inicialización):** Consumo asíncrono con `async` y `await` en el proyecto del mini-sitio comunitario.
-  * **Clase 22 (Tablero de Mensajes):** Diseño adaptativo, criterios de legibilidad, contraste suficiente, jerarquía visual y curaduría con minimización de datos visibles.
-  * **Clase 23 (Integración Frontend-Backend):** Conexión asíncrona mediante fetch a API propia (`/api/mensajes`, `/api/calendario`, `/api/resumen`), renderizado dinámico en el DOM, y principios éticos de moderación de información ciudadana.
+### 📙 Módulo 2 - Comunicación Digital para la Paz y la Democracia
+* **semana4:** Servidor básico con Node.js y Express. Creación de rutas GET, configuración inicial del proyecto con `npm init` y `npm install express`.
+* **semana5:** Rutas y endpoints en Express. Métodos HTTP GET y POST, parámetros dinámicos en rutas, introducción a las APIs.
+
+### 📗 Módulo 3 - Construcción de Comunidades Digitales para la Participación Ciudadana
+* **semana6:** Recepción y procesamiento de datos JSON con `req.body` en Express. Rutas POST para registro de información comunitaria e incidencias.
+* **semana7:** APIs con almacenamiento en memoria usando arrays. Rutas GET y POST para registrar y consultar reportes ciudadanos.
+
+### 📕 Módulo 4 - Sistemas Operativos de Código Abierto y Seguridad Digital
+* **semana8:** Fundamentos de Linux, comandos básicos de terminal (`uname -a`, `whoami`), buenas prácticas de seguridad digital y protección de plataformas comunitarias.
+* **semana9:** Servidores con Node.js y Express, puertos, logs y estabilidad. Componentes de un entorno servidor y su función en aplicaciones comunitarias.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 * **Backend:** Node.js, Express Framework, REST APIs, JSON
 * **Frontend:** HTML5 semántico, CSS3 moderno, Vanilla JavaScript asíncrono (`fetch`, `async/await`, manipulación del DOM)
-* **Control de Versiones:** Git, GitHub (Formatos de ramas personales, actualizaciones seguras con Fast-Forward)
+* **Sistemas Operativos:** Linux, comandos de terminal, seguridad digital
+* **Control de Versiones:** Git, GitHub
 
 ---
 
