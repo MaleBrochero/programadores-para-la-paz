@@ -1,0 +1,9 @@
+Contar con una plataforma tecnológica que permita registrar y consultar reportes o incidencias es fundamental para que las comunidades puedan ejercer una participación ciudadana real y efectiva.
+Sin un sistema de registro organizado, los problemas del barrio o la comunidad se reportan de manera dispersa por mensajes informales, llamadas o rumores que dificultan dar respuesta oportuna.
+Una plataforma de reportes convierte cada incidencia en un registro formal con información estructurada, lo que facilita su clasificación, priorización y seguimiento por parte de quienes deben actuar.
+La posibilidad de consultar los reportes registrados también aporta transparencia: los ciudadanos pueden ver si su reporte fue recibido, cuántos problemas similares existen y qué está haciendo la comunidad al respecto.
+El uso de arrays para almacenar información, como se practicó en esta semana, muestra cómo funciona la memoria temporal de una aplicación y sienta las bases para entender bases de datos más adelante.
+Un sistema así también reduce la dependencia de intermediarios: cualquier ciudadano con acceso a la plataforma puede reportar directamente, sin necesitar conocer a alguien con influencia.
+La acumulación de reportes a lo largo del tiempo genera datos valiosos que pueden usarse para identificar patrones, zonas con más problemas y tomar decisiones basadas en evidencia real.
+En procesos de construcción de paz, documentar incidencias de convivencia o conflictos comunitarios de forma organizada puede ser clave para promover diálogos y mediaciones oportunas.
+En definitiva, registrar y consultar reportes en una plataforma tecnológica es un acto de ciudadanía activa que fortalece la voz de las comunidades y su capacidad de organizarse colectivamente.

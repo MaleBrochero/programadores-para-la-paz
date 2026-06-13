@@ -1,0 +1,40 @@
+Prueba de la ruta GET /reportes - Semana 7
+
+Paso 1 - Registrar reportes con POST
+Se enviaron dos peticiones POST a http://localhost:3000/reportes usando Thunder Client.
+
+Primera petición POST:
+{
+  "tipo": "Infraestructura",
+  "descripcion": "Daño en alumbrado público"
+}
+
+Segunda petición POST:
+{
+  "tipo": "Ambiente",
+  "descripcion": "Acumulación de residuos en una zona comunitaria"
+}
+
+Paso 2 - Consultar reportes con GET
+Al visitar http://localhost:3000/reportes en el navegador después de registrar los reportes,
+el servidor respondió con la lista completa de reportes almacenados en memoria:
+
+[
+  {
+    "id": 1,
+    "tipo": "Infraestructura",
+    "descripcion": "Daño en alumbrado público"
+  },
+  {
+    "id": 2,
+    "tipo": "Ambiente",
+    "descripcion": "Acumulación de residuos en una zona comunitaria"
+  }
+]
+
+¿Qué sucede al consultar los reportes?
+Cuando se consulta la ruta GET /reportes, el servidor devuelve todos los reportes que han sido
+registrados hasta ese momento en el array que está almacenado en memoria.
+Cada reporte tiene un id único generado automáticamente, el tipo de incidencia y su descripción.
+Si se reinicia el servidor, el array vuelve a estar vacío porque los datos solo se guardan en memoria,
+no en una base de datos permanente. Esto es esperado en esta práctica introductoria.

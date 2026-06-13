@@ -1,0 +1,25 @@
+Ejemplos de reportes ciudadanos para el sistema comunitario - Semana 7
+
+Ejemplo 1:
+{
+  "tipo": "Infraestructura",
+  "descripcion": "Daño en alumbrado público en la calle principal del barrio, generando inseguridad nocturna para los residentes."
+}
+
+Ejemplo 2:
+{
+  "tipo": "Ambiente",
+  "descripcion": "Acumulación de residuos sólidos en el parque central de la comunidad, afectando la salud y el bienestar de los habitantes."
+}
+
+Ejemplo 3:
+{
+  "tipo": "Convivencia",
+  "descripcion": "Conflicto vecinal por uso de espacio público en la entrada del conjunto residencial que requiere mediación comunitaria."
+}
+
+Ejemplo 4:
+{
+  "tipo": "Servicios públicos",
+  "descripcion": "Corte de agua potable sin previo aviso que lleva más de 12 horas afectando a más de 50 familias del sector."
+}
