@@ -1,0 +1,9 @@
+La estabilidad y seguridad de un servidor son fundamentales para cualquier plataforma tecnológica comunitaria, porque de ellas depende que las personas puedan acceder a la información y los servicios cuando más los necesitan.
+Una plataforma que se cae frecuentemente pierde la confianza de la comunidad, que dejará de usarla y volverá a métodos informales e inseguros de comunicación.
+En contextos de construcción de paz, la disponibilidad continua del servidor puede ser crítica: imagina un sistema de alertas tempranas que falla justo cuando ocurre una emergencia.
+La seguridad del servidor protege los datos sensibles de los usuarios, como reportes ciudadanos, testimonios o información personal, que podrían poner en riesgo a las personas si cayeran en manos equivocadas.
+Un servidor bien administrado, con monitoreo y logs activos, permite detectar problemas antes de que afecten a los usuarios, reduciendo el tiempo de inactividad y los daños causados por fallas.
+Las actualizaciones regulares del sistema operativo y las dependencias del servidor cierran vulnerabilidades de seguridad que podrían ser explotadas por actores maliciosos.
+En comunidades rurales o con acceso limitado a internet, cada momento de inactividad del servidor representa una barrera adicional para la participación ciudadana y el acceso a recursos.
+Construir y mantener servidores estables también es un acto de responsabilidad ética: quienes desarrollan tecnología comunitaria asumen el compromiso de proteger a las personas que dependen de ella.
+La estabilidad técnica y la seguridad digital no son lujos reservados para grandes empresas, sino derechos que deben garantizarse también en las iniciativas de base comunitaria.

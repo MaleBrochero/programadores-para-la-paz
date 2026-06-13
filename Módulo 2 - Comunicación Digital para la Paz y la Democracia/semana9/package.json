@@ -1,0 +1,14 @@
+{
+  "name": "programadores-para-la-paz-semana9",
+  "version": "1.0.0",
+  "description": "Servidor Node.js con Express para la semana 9 del programa Programadores para la Paz.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Programa Capacitación en Democracia y Tecnología",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}
