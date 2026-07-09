@@ -1,0 +1,44 @@
+RESPUESTAS - PREGUNTAS DE SELECCIÓN MÚLTIPLE
+Semana 10 - Módulo 5
+Programadores para la Paz
+============================================================
+
+Pregunta 1 — ¿Qué es un backlog en un proyecto de software?
+Respuesta: b) Una lista priorizada de tareas o funcionalidades por desarrollar.
+
+Explicación: El backlog es una herramienta central en las metodologías ágiles. 
+Contiene todas las tareas, funcionalidades o mejoras que el equipo debe 
+desarrollar, ordenadas según su importancia y urgencia. Es un documento vivo 
+que se actualiza constantemente durante el proyecto.
+
+------------------------------------------------------------
+
+Pregunta 2 — ¿Qué describe mejor una historia de usuario?
+Respuesta: b) Una forma breve de expresar qué necesita un usuario y para qué lo necesita.
+
+Explicación: Una historia de usuario sigue el formato: "Como [tipo de usuario], 
+quiero [acción o funcionalidad] para [objetivo o beneficio]". Este formato 
+permite al equipo comprender el valor real que aporta cada funcionalidad desde 
+la perspectiva de quien la usará.
+
+------------------------------------------------------------
+
+Pregunta 3 — ¿Cuál es el propósito principal de n8n en esta semana?
+Respuesta: b) Automatizar tareas repetitivas y notificaciones de seguimiento no sensibles.
+
+Explicación: n8n es una plataforma de automatización de flujos de trabajo de 
+código abierto. En este contexto, permite conectar eventos del sistema con 
+acciones automáticas como el envío de alertas o notificaciones, sin necesidad 
+de escribir código complejo. Su uso respeta la privacidad al no transmitir 
+datos sensibles.
+
+------------------------------------------------------------
+
+Pregunta 4 — ¿Para qué puede servir Telegram en esta semana?
+Respuesta: b) Como canal de coordinación, convocatoria y notificación comunitaria.
+
+Explicación: Telegram es una plataforma de mensajería que permite crear bots, 
+grupos y canales de difusión. En proyectos de veeduría y participación ciudadana, 
+se puede usar para enviar alertas automáticas, convocar a reuniones, y mantener 
+informada a la comunidad de forma rápida y segura, siempre protegiendo los 
+datos personales de los participantes.

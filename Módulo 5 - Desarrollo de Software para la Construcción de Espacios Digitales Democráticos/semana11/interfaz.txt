@@ -1,0 +1,128 @@
+DISEÑO DE INTERFAZ - PLATAFORMA COMUNITARIA
+Semana 11 - Módulo 5
+Programadores para la Paz
+============================================================
+
+DESCRIPCIÓN GENERAL DE LA INTERFAZ:
+La interfaz de la plataforma comunitaria está diseñada para ser clara, 
+accesible e intuitiva. Su objetivo es que cualquier ciudadano, sin importar 
+su nivel de experiencia tecnológica, pueda navegar, registrar causas 
+y participar activamente en su comunidad.
+
+============================================================
+SECCIÓN 1: ENCABEZADO (Header)
+============================================================
+Ubicación: Parte superior de todas las páginas.
+
+Contenido:
+- Logo o nombre de la plataforma: "Voz Ciudadana"
+- Menú de navegación: Inicio | Causas | Acerca de
+- Botón de Iniciar sesión (si el usuario no está autenticado)
+- Nombre del usuario y botón Cerrar sesión (si está autenticado)
+
+Propósito:
+Permite la navegación entre secciones y muestra el estado de sesión 
+del usuario de forma visible y sencilla.
+
+============================================================
+SECCIÓN 2: FORMULARIO PARA CREAR UNA CAUSA
+============================================================
+Ubicación: Página "Nueva Causa" — solo accesible para usuarios autenticados.
+
+Campos del formulario:
+- Título de la causa (campo de texto, obligatorio, máximo 100 caracteres)
+- Descripción detallada (área de texto, obligatorio, mínimo 50 caracteres)
+- Categoría (menú desplegable: infraestructura, salud, educación, 
+  medio ambiente, movilidad, otro)
+- Botón "Publicar Causa" (color destacado, centrado al final del formulario)
+
+Validaciones visibles:
+- Si un campo queda vacío, aparece un mensaje de error en rojo debajo del campo.
+- El botón se activa solo cuando todos los campos son válidos.
+
+Propósito:
+Permitir que los ciudadanos registren sus iniciativas o problemas 
+comunitarios de forma estructurada y clara.
+
+============================================================
+SECCIÓN 3: VISTA DE CAUSAS DISPONIBLES
+============================================================
+Ubicación: Página principal "Causas" — visible para todos los visitantes.
+
+Estructura de la vista:
+- Barra de búsqueda para filtrar causas por palabra clave.
+- Filtro por categoría (botones o menú desplegable).
+- Listado de causas en tarjetas (cards), cada una mostrando:
+    → Título de la causa
+    → Categoría con etiqueta de color
+    → Descripción resumida (máximo 150 caracteres con "ver más")
+    → Fecha de creación
+    → Contador de apoyos (ícono de corazón o mano + número)
+    → Botón "Apoyar esta causa"
+    → Estado de la causa (Activa / En revisión / Cerrada)
+
+Propósito:
+Mostrar de forma organizada y atractiva todas las causas registradas, 
+facilitando que los ciudadanos encuentren las que les interesan.
+
+============================================================
+SECCIÓN 4: BOTÓN PARA APOYAR UNA CAUSA
+============================================================
+Ubicación: En cada tarjeta de causa y en la vista detallada de cada causa.
+
+Comportamiento:
+- Si el usuario NO está autenticado: al hacer clic, aparece un mensaje 
+  "Inicia sesión para apoyar esta causa" con enlace al login.
+- Si el usuario ESTÁ autenticado y NO ha apoyado la causa: el botón dice 
+  "Apoyar" y al hacer clic registra su apoyo en la base de datos.
+- Si el usuario YA apoyó la causa: el botón cambia a "Ya apoyaste esta causa" 
+  y aparece desactivado (gris), evitando duplicados.
+
+Propósito:
+Registrar la participación ciudadana de forma controlada, evitando 
+apoyos duplicados y garantizando la integridad de los datos.
+
+============================================================
+SECCIÓN 5: CONTADOR DE APOYOS
+============================================================
+Ubicación: Visible en cada tarjeta de la lista y en la vista detallada.
+
+Diseño:
+- Ícono representativo (corazón, mano alzada o estrella)
+- Número actualizado en tiempo real tras registrar un apoyo
+- Texto: "X personas apoyan esta causa"
+
+Propósito:
+Mostrar el nivel de participación comunitaria de cada causa, generando 
+visibilidad y motivando a más ciudadanos a sumarse.
+
+============================================================
+SECCIÓN 6: PANEL DE COORDINADOR (Ruta protegida)
+============================================================
+Ubicación: Solo accesible para usuarios con rol "coordinador" o "admin".
+
+Contenido:
+- Lista completa de causas con sus estados.
+- Botones para cambiar el estado: "Marcar en revisión" | "Cerrar causa".
+- Formulario para agregar actualizaciones de seguimiento a cada causa.
+- Resumen estadístico: total de causas, total de apoyos, causas por categoría.
+
+Información que NO aparece en esta vista:
+- Contraseñas o datos de autenticación de usuarios.
+- Información de contacto privada de los ciudadanos.
+- Datos sensibles que no sean necesarios para el seguimiento.
+
+Propósito:
+Dar a los coordinadores las herramientas necesarias para gestionar y 
+hacer seguimiento de las causas sin acceder a información privada 
+innecesaria de los participantes.
+
+============================================================
+PRINCIPIOS DE DISEÑO APLICADOS:
+============================================================
+1. Claridad: Cada elemento tiene un propósito claro y visible.
+2. Accesibilidad: Tipografía legible, contraste suficiente entre texto y fondo.
+3. Privacidad por diseño: No se muestra información personal de los usuarios.
+4. Simplicidad: Mínima cantidad de pasos para completar una acción.
+5. Retroalimentación: El sistema siempre informa al usuario qué pasó 
+   tras cada acción (éxito, error, confirmación).

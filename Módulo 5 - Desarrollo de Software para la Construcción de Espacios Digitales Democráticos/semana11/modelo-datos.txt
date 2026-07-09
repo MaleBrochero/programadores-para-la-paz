@@ -1,0 +1,95 @@
+MODELO DE DATOS - PLATAFORMA COMUNITARIA
+Semana 11 - Módulo 5
+Programadores para la Paz
+============================================================
+
+DESCRIPCIÓN GENERAL:
+Este modelo de datos soporta una plataforma de participación ciudadana 
+donde los usuarios pueden crear causas comunitarias, apoyarlas y 
+hacer seguimiento de su progreso.
+
+============================================================
+ENTIDAD 1: Usuario
+============================================================
+Nombre de la entidad: Usuario
+
+Campos principales:
+- id              → Identificador único (número entero, clave primaria)
+- nombre_usuario  → Nombre público con el que aparece en la plataforma
+- correo          → Correo electrónico para autenticación (único)
+- contrasena_hash → Contraseña cifrada con bcrypt (nunca en texto plano)
+- rol             → Tipo de usuario: "ciudadano", "coordinador" o "admin"
+- fecha_registro  → Fecha en que se unió a la plataforma
+- activo          → Estado de la cuenta (true/false)
+
+Propósito:
+Gestionar las cuentas de acceso a la plataforma. Permite identificar a 
+los participantes, controlar sus permisos según su rol y mantener 
+trazabilidad de quién realiza cada acción. La contraseña siempre se 
+almacena cifrada y nunca en texto plano para proteger la seguridad 
+de los usuarios.
+
+============================================================
+ENTIDAD 2: Causa
+============================================================
+Nombre de la entidad: Causa
+
+Campos principales:
+- id              → Identificador único (número entero, clave primaria)
+- titulo          → Nombre breve y descriptivo de la causa
+- descripcion     → Explicación detallada del problema o iniciativa
+- categoria       → Clasificación: "infraestructura", "salud", "educación", etc.
+- estado          → Estado actual: "activa", "en_revision", "cerrada"
+- usuario_id      → Referencia al usuario que creó la causa (clave foránea)
+- fecha_creacion  → Fecha y hora de registro de la causa
+- fecha_cierre    → Fecha en que se resolvió o cerró la causa (puede ser null)
+
+Propósito:
+Almacenar las causas o iniciativas comunitarias que los ciudadanos 
+registran en la plataforma. Permite organizarlas por categoría, hacer 
+seguimiento de su estado y conocer quién las creó para mantener 
+trazabilidad del proceso.
+
+============================================================
+ENTIDAD 3: Apoyo
+============================================================
+Nombre de la entidad: Apoyo
+
+Campos principales:
+- id              → Identificador único (número entero, clave primaria)
+- causa_id        → Referencia a la causa apoyada (clave foránea)
+- usuario_id      → Referencia al usuario que apoya (clave foránea)
+- fecha           → Fecha y hora en que se registró el apoyo
+
+Propósito:
+Registrar cuántos y cuáles usuarios han apoyado cada causa. Permite 
+mostrar el contador de apoyos en la interfaz, validar que un mismo 
+usuario no apoye una causa más de una vez, y generar reportes de 
+participación ciudadana.
+
+============================================================
+ENTIDAD 4: Reporte_Seguimiento
+============================================================
+Nombre de la entidad: Reporte_Seguimiento
+
+Campos principales:
+- id              → Identificador único (número entero, clave primaria)
+- causa_id        → Referencia a la causa relacionada (clave foránea)
+- usuario_id      → Referencia al coordinador que registra el avance
+- descripcion     → Descripción del avance o novedad registrada
+- tipo            → Tipo de actualización: "avance", "alerta", "cierre"
+- fecha           → Fecha y hora del registro del seguimiento
+
+Propósito:
+Mantener un historial de actualizaciones sobre el estado de cada causa. 
+Esto garantiza la trazabilidad del proceso y permite que la comunidad 
+conozca los avances realizados por el equipo coordinador.
+
+============================================================
+RELACIONES ENTRE ENTIDADES:
+============================================================
+- Un Usuario puede crear muchas Causas (relación 1 a muchos)
+- Una Causa puede recibir muchos Apoyos (relación 1 a muchos)
+- Un Usuario puede dar muchos Apoyos (relación 1 a muchos)
+- Una Causa puede tener muchos Reportes_Seguimiento (relación 1 a muchos)
+- Un usuario no puede apoyar la misma causa más de una vez (restricción única)

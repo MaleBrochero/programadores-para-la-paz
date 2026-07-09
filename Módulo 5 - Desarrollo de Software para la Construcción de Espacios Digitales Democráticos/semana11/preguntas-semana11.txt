@@ -1,0 +1,47 @@
+RESPUESTAS - PREGUNTAS DE SELECCIÓN MÚLTIPLE
+Semana 11 - Módulo 5
+Programadores para la Paz
+============================================================
+
+Pregunta 1 — ¿Qué es una base de datos en una aplicación?
+Respuesta: b) Un sistema que permite almacenar y consultar información estructurada.
+
+Explicación: Una base de datos organiza la información en tablas, colecciones 
+o documentos de manera que pueda ser consultada, actualizada y eliminada de 
+forma eficiente. En una plataforma ciudadana, la base de datos guarda los 
+registros de causas, usuarios y apoyos, permitiendo que la información 
+persista y esté disponible para todos los usuarios del sistema.
+
+------------------------------------------------------------
+
+Pregunta 2 — ¿Qué significa CRUD en programación?
+Respuesta: a) Crear, leer, actualizar y eliminar datos.
+
+Explicación: CRUD (Create, Read, Update, Delete) representa las cuatro 
+operaciones fundamentales que se realizan sobre los datos en cualquier 
+aplicación. Crear registra nueva información, Leer la consulta, Actualizar 
+la modifica y Eliminar la borra. Toda aplicación de participación ciudadana 
+necesita estas operaciones para gestionar causas, apoyos y usuarios.
+
+------------------------------------------------------------
+
+Pregunta 3 — ¿Qué permite la autenticación de usuarios en una aplicación?
+Respuesta: b) Identificar usuarios y controlar quién puede acceder a ciertas funciones.
+
+Explicación: La autenticación verifica la identidad de quien intenta acceder 
+al sistema mediante credenciales como usuario y contraseña. Esto garantiza 
+que solo las personas autorizadas puedan realizar acciones sensibles como 
+crear, editar o eliminar registros. Sin autenticación, cualquier persona 
+podría manipular la información de la plataforma.
+
+------------------------------------------------------------
+
+Pregunta 4 — ¿Por qué es importante proteger datos sensibles en una plataforma digital?
+Respuesta: b) Para evitar riesgos de privacidad o uso indebido de la información.
+
+Explicación: La protección de datos es una responsabilidad ética y legal. 
+En plataformas de participación ciudadana, las personas comparten información 
+sobre situaciones comunitarias y confían en que sus datos no serán expuestos 
+ni utilizados en su contra. Exponer datos sensibles puede generar riesgos 
+para la integridad y seguridad de los participantes, especialmente en 
+contextos de veeduría o denuncia ciudadana.

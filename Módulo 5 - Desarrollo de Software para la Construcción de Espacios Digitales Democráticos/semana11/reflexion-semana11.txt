@@ -1,0 +1,30 @@
+REFLEXIÓN FINAL - SEMANA 11
+Módulo 5 - Programadores para la Paz
+============================================================
+
+Una plataforma tecnológica que promueve la participación ciudadana necesita 
+tres pilares fundamentales: base de datos, autenticación de usuarios y 
+protección de información. Sin base de datos, la información desaparece con 
+cada cierre de sesión y no hay forma de hacer seguimiento real de los procesos 
+comunitarios. La base de datos permite que las causas, los apoyos y los reportes 
+persistan en el tiempo y estén disponibles para todos los actores involucrados.
+
+La autenticación garantiza que cada acción dentro de la plataforma esté 
+vinculada a una persona identificada, lo que genera responsabilidad y trazabilidad. 
+Sin login, cualquiera podría borrar registros, manipular causas o suplantar la 
+identidad de otros. En contextos de veeduría ciudadana, donde se documentan 
+irregularidades o situaciones delicadas, saber quién hace qué y cuándo es 
+esencial para la credibilidad del proceso.
+
+La protección de datos va más allá de un requisito técnico: es una obligación 
+ética. Las personas que participan en plataformas comunitarias confían en que 
+su información estará segura. Si esa confianza se rompe, la comunidad deja de 
+participar. Por eso las contraseñas siempre deben almacenarse cifradas, los 
+datos personales no deben exponerse en interfaces públicas, y los tokens o 
+claves de acceso jamás deben subirse al repositorio.
+
+En conclusión, construir una plataforma democrática no es solo una tarea técnica: 
+es un compromiso con quienes la van a usar. La tecnología bien implementada, con 
+base de datos estructurada, accesos controlados y datos protegidos, se convierte 
+en una herramienta poderosa para fortalecer la democracia y la participación 
+ciudadana de manera segura, transparente y responsable.

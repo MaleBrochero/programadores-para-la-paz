@@ -1,0 +1,52 @@
+AUTENTICACIÓN DE USUARIOS - PLATAFORMA COMUNITARIA
+Semana 11 - Módulo 5
+Programadores para la Paz
+============================================================
+
+¿QUÉ ES EL LOGIN EN UNA APLICACIÓN?
+------------------------------------------------------------
+El login es el proceso mediante el cual un usuario demuestra su identidad 
+ante el sistema antes de poder acceder a sus funciones. Funciona presentando 
+credenciales, generalmente un correo electrónico y una contraseña, que el 
+sistema verifica comparándolas con los datos almacenados de forma segura en 
+la base de datos. Si las credenciales son correctas, el sistema genera una 
+sesión o token que autoriza al usuario a usar la plataforma durante ese 
+período. Sin login, no sería posible saber quién realiza cada acción ni 
+controlar qué puede hacer cada persona dentro del sistema.
+
+¿POR QUÉ ALGUNAS RUTAS DEBEN ESTAR PROTEGIDAS?
+------------------------------------------------------------
+No todas las funciones de una plataforma deben estar disponibles para 
+cualquier persona. Las rutas protegidas requieren que el usuario haya 
+iniciado sesión antes de poder acceder a ellas. Esto es necesario porque:
+
+- Los paneles de administración contienen información interna del sistema 
+  que no debe ser pública.
+- Las acciones de crear, editar o eliminar causas deben estar vinculadas 
+  a un usuario identificado para mantener trazabilidad y responsabilidad.
+- Los reportes de seguimiento pueden contener detalles sensibles sobre 
+  situaciones comunitarias que solo deben ver los coordinadores.
+- Sin protección de rutas, cualquier persona podría manipular datos, 
+  borrar registros o acceder a información privada de la comunidad.
+
+Una ruta pública como "ver lista de causas" puede estar abierta a todos. 
+Pero una ruta como "crear causa", "ver reportes internos" o "gestionar 
+usuarios" debe exigir autenticación previa.
+
+¿QUÉ INFORMACIÓN NO DEBERÍA EXPONERSE PÚBLICAMENTE?
+------------------------------------------------------------
+En una plataforma de participación ciudadana, la protección de datos 
+es una responsabilidad ética y legal. No debe exponerse:
+
+❌ Contraseñas o hashes de contraseñas de los usuarios.
+❌ Correos electrónicos completos de los participantes.
+❌ Números de documento de identidad (cédula, pasaporte).
+❌ Números de teléfono o direcciones de domicilio.
+❌ Tokens de autenticación o claves de API.
+❌ Variables de entorno (.env) con configuraciones del servidor.
+❌ Datos de salud, situación legal o información financiera.
+❌ Información que permita identificar a quien realizó una denuncia, 
+   especialmente en contextos de riesgo o vulnerabilidad.
+
+La privacidad de quienes participan en la plataforma debe ser siempre 
+la prioridad, ya que su seguridad puede depender de ella.

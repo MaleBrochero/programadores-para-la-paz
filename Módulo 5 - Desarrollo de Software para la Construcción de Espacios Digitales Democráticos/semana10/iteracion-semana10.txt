@@ -1,0 +1,56 @@
+DEFINICIÓN DE ITERACIÓN - SPRINT 1
+Semana 10 - Módulo 5
+Programadores para la Paz
+============================================================
+
+PREGUNTA 1: ¿Qué 2 tareas del backlog harías primero?
+------------------------------------------------------------
+Tarea 1 (Prioridad 1):
+"Como ciudadano quiero registrar una incidencia o irregularidad en mi comunidad 
+para dejar evidencia del caso."
+
+Tarea 2 (Prioridad 2):
+"Como coordinador de veeduría quiero recibir una alerta automática en Telegram 
+cuando se registre un nuevo reporte."
+
+------------------------------------------------------------
+PREGUNTA 2: ¿Por qué son las más importantes?
+------------------------------------------------------------
+Estas dos tareas son las más importantes porque forman el núcleo funcional 
+del sistema de veeduría. Sin el registro de incidencias, el sistema no tiene 
+razón de existir; no hay datos que gestionar ni seguimiento posible. 
+Es la funcionalidad base sobre la cual se construye todo lo demás.
+
+La alerta automática en Telegram complementa el registro porque garantiza 
+que el equipo sea notificado de inmediato cuando ocurra algo relevante. 
+Sin esta notificación, el registro puede perderse en la base de datos sin 
+que nadie actúe a tiempo. Juntas, estas dos tareas permiten que el sistema 
+cumpla su propósito mínimo: registrar y alertar.
+
+Además, al implementarlas primero, el equipo puede mostrar rápidamente 
+un producto funcional a la comunidad, generar confianza y recoger 
+retroalimentación real que mejore las siguientes iteraciones.
+
+------------------------------------------------------------
+PREGUNTA 3: ¿Qué significa para mí que una tarea esté "terminada"?
+------------------------------------------------------------
+DEFINICIÓN DE TERMINADO (Definition of Done):
+
+Una tarea se considera terminada cuando cumple todos los siguientes criterios:
+
+1. FUNCIONA: La funcionalidad hace exactamente lo que la historia de usuario 
+   describe, sin errores ni comportamientos inesperados.
+
+2. FUE PROBADA: Se realizaron pruebas manuales con al menos 2 casos de uso 
+   distintos (caso exitoso y caso con datos incorrectos) y los resultados 
+   fueron los esperados.
+
+3. QUEDÓ REGISTRADA EN GIT: Los cambios fueron confirmados con un commit 
+   descriptivo y están disponibles en el repositorio remoto (git push).
+
+4. PROTEGE LOS DATOS: La funcionalidad no expone ni transmite datos 
+   personales, tokens, contraseñas ni información sensible en ningún 
+   momento del flujo.
+
+5. FUE REVISADA POR UN COMPAÑERO: Al menos otra persona del equipo revisó 
+   el código o probó la funcionalidad antes de marcarla como terminada.

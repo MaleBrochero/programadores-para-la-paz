@@ -1,0 +1,87 @@
+DISEÑO DE AUTOMATIZACIÓN - n8n + TELEGRAM
+Semana 10 - Módulo 5
+Programadores para la Paz
+============================================================
+
+NOMBRE DEL FLUJO: Alerta de nuevo reporte ciudadano
+HERRAMIENTAS: n8n (automatización) + Telegram (notificación)
+
+------------------------------------------------------------
+DESCRIPCIÓN DEL FLUJO
+------------------------------------------------------------
+
+PASO 1 — EVENTO DISPARADOR (Trigger)
+--------------------------------------
+¿Qué evento activa el flujo?
+
+El flujo se activa cuando un ciudadano envía un nuevo reporte o incidencia 
+a través del formulario web del sistema de veeduría. 
+Técnicamente, el disparador es un webhook en n8n que recibe los datos 
+del formulario al momento del envío.
+
+Tipo de nodo en n8n: Webhook Trigger
+Condición: Se activa solo si el campo "estado" del formulario 
+es igual a "nuevo_reporte".
+
+------------------------------------------------------------
+PASO 2 — PROCESAMIENTO
+--------------------------------------
+n8n recibe los datos del formulario y filtra únicamente la información 
+NO sensible que se puede transmitir de forma segura.
+
+Datos que se conservan para la notificación:
+- Número de radicado (generado automáticamente por el sistema)
+- Categoría del reporte (ej: infraestructura, salud pública, movilidad)
+- Fecha y hora del registro
+- Estado inicial: "Pendiente de revisión"
+
+------------------------------------------------------------
+PASO 3 — ACCIÓN (Envío a Telegram)
+--------------------------------------
+¿Qué mensaje se enviaría a Telegram?
+
+n8n envía un mensaje automático al canal o grupo de coordinación en Telegram 
+con el siguiente formato:
+
+---
+🔔 NUEVO REPORTE REGISTRADO
+
+📋 Radicado: #VEE-2024-00123
+📂 Categoría: Infraestructura vial
+📅 Fecha: 08/07/2026 - 19:30
+🔄 Estado: Pendiente de revisión
+
+👉 Ingrese al sistema para revisar el caso.
+---
+
+------------------------------------------------------------
+PASO 4 — CONFIRMACIÓN
+--------------------------------------
+n8n registra en un log interno que la notificación fue enviada 
+exitosamente, incluyendo la hora de envío y el ID del mensaje de Telegram.
+
+------------------------------------------------------------
+INFORMACIÓN QUE NO DEBE ENVIARSE (por seguridad y privacidad)
+------------------------------------------------------------
+Los siguientes datos NUNCA deben incluirse en el mensaje de Telegram 
+ni en ninguna notificación automática:
+
+❌ Nombres completos del denunciante o de las personas involucradas.
+❌ Números de documento de identidad (cédula, pasaporte, etc.).
+❌ Direcciones exactas o coordenadas GPS del domicilio del denunciante.
+❌ Números de teléfono o correos electrónicos personales.
+❌ Tokens de acceso a la API de Telegram o cualquier API.
+❌ Contraseñas o credenciales de acceso al sistema.
+❌ Claves de cifrado o variables de entorno (.env).
+❌ Datos de salud, situación legal o información financiera.
+❌ Fotografías o archivos adjuntos con información identificable.
+
+------------------------------------------------------------
+JUSTIFICACIÓN
+------------------------------------------------------------
+Esta automatización respeta el principio de minimización de datos: 
+solo se transmite lo estrictamente necesario para coordinar la acción 
+del equipo de veeduría. La seguridad y privacidad de quienes reportan 
+es una responsabilidad ética y legal del sistema, especialmente en 
+contextos de participación ciudadana donde puede existir riesgo 
+para los denunciantes.

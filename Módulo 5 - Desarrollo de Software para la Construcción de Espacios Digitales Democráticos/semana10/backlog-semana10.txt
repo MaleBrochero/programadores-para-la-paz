@@ -1,0 +1,63 @@
+BACKLOG - SOLUCIÓN COMUNITARIA DE VEEDURÍA DIGITAL
+Semana 10 - Módulo 5
+Programadores para la Paz
+============================================================
+Ordenadas de MAYOR a MENOR prioridad:
+
+------------------------------------------------------------
+PRIORIDAD 1 — ALTA
+Historia de usuario:
+"Como ciudadano quiero registrar una incidencia o irregularidad en mi comunidad 
+para dejar evidencia del caso y que pueda ser revisada por las autoridades 
+o veedores correspondientes."
+
+Criterios de aceptación:
+- El formulario permite ingresar descripción, fecha y categoría del caso.
+- El registro queda almacenado con un número de radicado único.
+- No se solicitan datos personales sensibles del denunciante.
+
+------------------------------------------------------------
+PRIORIDAD 2 — ALTA
+Historia de usuario:
+"Como coordinador de veeduría quiero recibir una alerta automática en Telegram 
+cuando se registre un nuevo reporte para poder revisarlo de forma oportuna 
+sin depender de correos o llamadas."
+
+Criterios de aceptación:
+- El bot de Telegram envía el aviso en menos de 2 minutos tras el registro.
+- El mensaje solo incluye el número de radicado y la categoría del caso.
+- No se transmite ningún dato personal ni información sensible.
+
+------------------------------------------------------------
+PRIORIDAD 3 — MEDIA
+Historia de usuario:
+"Como miembro del equipo quiero consultar todos los reportes registrados 
+para hacer seguimiento del estado de cada caso y verificar su avance."
+
+Criterios de aceptación:
+- Se puede filtrar por fecha, estado y categoría.
+- Cada reporte muestra su historial de actualizaciones.
+- El acceso está protegido por contraseña o rol de usuario.
+
+------------------------------------------------------------
+PRIORIDAD 4 — MEDIA
+Historia de usuario:
+"Como veedor ciudadano quiero generar un informe mensual en formato PDF 
+con el resumen de los casos registrados para presentarlo en reuniones 
+de control y rendición de cuentas."
+
+Criterios de aceptación:
+- El informe incluye estadísticas por categoría y estado.
+- Se puede descargar desde la plataforma sin datos personales visibles.
+- El reporte refleja solo el período seleccionado.
+
+------------------------------------------------------------
+PRIORIDAD 5 — BAJA
+Historia de usuario:
+"Como ciudadano quiero consultar el estado de mi reporte ingresando 
+el número de radicado para saber si ya fue atendido o está en proceso."
+
+Criterios de aceptación:
+- La consulta es pública y no requiere registro.
+- Solo muestra el estado y la fecha de última actualización.
+- No expone información de otros reportes ni datos internos del sistema.
