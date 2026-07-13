@@ -1,0 +1,111 @@
+DISEÑO DE AUTOMATIZACIÓN - n8n + TELEGRAM
+Semana 12 - Módulo 6
+Programadores para la Paz
+============================================================
+
+NOMBRE DEL FLUJO: Alerta de nueva causa registrada en Petición en 3 Clics
+HERRAMIENTAS: n8n (automatización) + Telegram (notificación)
+
+------------------------------------------------------------
+DESCRIPCIÓN GENERAL
+------------------------------------------------------------
+Cuando un ciudadano registra una nueva causa en la plataforma "Petición
+en 3 Clics", el sistema debe notificar automáticamente al equipo coordinador
+para que pueda hacer seguimiento. Esta automatización usa n8n para detectar
+el evento y enviar un mensaje de alerta al canal de Telegram del equipo.
+
+------------------------------------------------------------
+PASO 1 — EVENTO QUE ACTIVA LA AUTOMATIZACIÓN (Trigger)
+------------------------------------------------------------
+¿Qué evento activa el flujo?
+
+El flujo se activa cuando un ciudadano completa el formulario de registro
+de una nueva causa y hace clic en "Publicar". En ese momento, el backend
+de la plataforma envía los datos del nuevo registro a un Webhook de n8n.
+
+Tipo de nodo en n8n: Webhook Trigger
+Condición: El flujo se activa únicamente cuando el campo "estado"
+del registro recibido es igual a "activa" (causa recién creada).
+
+------------------------------------------------------------
+PASO 2 — PROCESAMIENTO EN n8n
+------------------------------------------------------------
+n8n recibe los datos del nuevo registro y aplica un filtro para conservar
+únicamente la información NO sensible que puede transmitirse de forma segura.
+
+Datos que se conservan para la notificación:
+- Número de ID de la causa (generado automáticamente por el sistema)
+- Categoría de la causa (ej: infraestructura, salud, educación)
+- Fecha y hora del registro
+- Estado inicial: "Activa - pendiente de revisión"
+
+Datos que se descartan en este paso (no se transmiten):
+- Nombres del ciudadano creador
+- Información de contacto personal
+- Cualquier dato del formulario que sea sensible
+
+------------------------------------------------------------
+PASO 3 — ACCIÓN: Envío de notificación a Telegram
+------------------------------------------------------------
+¿Qué mensaje se envía?
+
+n8n envía automáticamente un mensaje al canal o grupo de Telegram
+del equipo coordinador con el siguiente formato:
+
+---
+🔔 NUEVA CAUSA REGISTRADA
+
+📋 ID de causa: #PC3C-2026-00045
+📂 Categoría: Infraestructura vial
+📅 Fecha de registro: 12/07/2026 - 22:30
+🔄 Estado: Activa - pendiente de revisión
+
+👉 Ingrese a la plataforma para revisar la causa y dar seguimiento.
+---
+
+El mensaje informa al equipo que hay una nueva petición esperando
+revisión, sin revelar datos personales del ciudadano que la creó.
+
+------------------------------------------------------------
+PASO 4 — CONFIRMACIÓN
+------------------------------------------------------------
+Una vez enviado el mensaje a Telegram, n8n registra internamente
+que la notificación fue procesada exitosamente, incluyendo:
+- Hora exacta del envío
+- ID del mensaje de Telegram generado
+- ID de la causa que activó el flujo
+
+Este registro interno permite hacer auditorías del sistema de
+notificaciones y detectar posibles fallas en la automatización.
+
+------------------------------------------------------------
+INFORMACIÓN QUE NO DEBE ENVIARSE (seguridad y privacidad)
+------------------------------------------------------------
+Los siguientes datos NUNCA deben incluirse en el mensaje de Telegram
+ni en ninguna notificación automática del sistema:
+
+❌ Nombre completo del ciudadano que creó la causa.
+❌ Número de documento de identidad (cédula, pasaporte, etc.).
+❌ Dirección exacta o coordenadas del domicilio del ciudadano.
+❌ Número de teléfono o correo electrónico personal.
+❌ Contraseñas, tokens de acceso o claves de API.
+❌ Variables de entorno o contenido de archivos .env.
+❌ Datos de salud, situación legal o información financiera.
+❌ Fotografías o archivos adjuntos con información identificable.
+❌ Listas de personas que apoyaron la causa con sus datos personales.
+❌ Comentarios internos del equipo o notas confidenciales del sistema.
+
+------------------------------------------------------------
+JUSTIFICACIÓN DE LA AUTOMATIZACIÓN
+------------------------------------------------------------
+Esta automatización respeta el principio de minimización de datos:
+solo se transmite por Telegram la información estrictamente necesaria
+para que el equipo coordinador sepa que existe una nueva causa y
+pueda actuar rápidamente. La privacidad del ciudadano que registra
+la causa es una responsabilidad ética y legal de la plataforma.
+
+En contextos de participación ciudadana, donde las personas pueden
+estar reportando problemas delicados de su comunidad, garantizar
+que sus datos personales no circulen por canales externos como
+Telegram es fundamental para proteger su integridad y fomentar
+la confianza en la plataforma como herramienta democrática segura.

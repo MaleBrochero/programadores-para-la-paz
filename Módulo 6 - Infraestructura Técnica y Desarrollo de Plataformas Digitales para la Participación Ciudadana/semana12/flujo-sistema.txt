@@ -1,0 +1,102 @@
+FLUJO DEL SISTEMA - PETICIÓN EN 3 CLICS
+Semana 12 - Módulo 6
+Programadores para la Paz
+============================================================
+
+DESCRIPCIÓN GENERAL:
+El sistema "Petición en 3 Clics" permite que cualquier ciudadano registre
+una causa comunitaria, reciba apoyos de otros miembros y genere de forma
+automática un documento formal con la petición. El nombre refleja la
+simplicidad del proceso: crear, apoyar y generar.
+
+============================================================
+FLUJO COMPLETO DEL SISTEMA (paso a paso)
+============================================================
+
+PASO 1 — El ciudadano accede a la plataforma y crea una causa
+--------------------------------------------------------------
+Un ciudadano entra al sistema desde su computador o celular.
+Completa un formulario simple con:
+  - Título de la causa
+  - Descripción del problema o solicitud
+  - Categoría (salud, infraestructura, educación, etc.)
+Al enviar el formulario, el sistema registra la causa en la base de datos
+con fecha, hora y un identificador único. El estado inicial es "activa".
+
+PASO 2 — La causa queda registrada en la base de datos
+--------------------------------------------------------------
+El sistema almacena la causa en la entidad "Causa" de la base de datos.
+La información guardada incluye: id, titulo, descripcion, categoria,
+estado, fecha_creacion. El sistema confirma al ciudadano que la causa
+fue registrada exitosamente y le muestra un enlace para compartirla.
+
+PASO 3 — Otros ciudadanos encuentran la causa y la apoyan
+--------------------------------------------------------------
+La causa aparece en el listado público de la plataforma.
+Otros ciudadanos pueden ver el título, la descripción y el número
+de apoyos acumulados. Al dar clic en "Apoyar", el sistema registra
+ese apoyo en la entidad "Apoyo" vinculando el apoyo a la causa y a
+la persona que apoyó. Cada ciudadano solo puede apoyar una causa una vez.
+
+PASO 4 — El sistema cuenta y muestra los apoyos en tiempo real
+--------------------------------------------------------------
+Cada vez que alguien apoya una causa, el contador de apoyos se actualiza
+visualmente en la plataforma. El sistema consulta la base de datos y
+muestra el número actualizado de personas que respaldan esa causa.
+Este contador es visible públicamente para dar transparencia al proceso.
+
+PASO 5 — Se activa una notificación automática al registrar un apoyo significativo
+--------------------------------------------------------------
+Cuando la causa alcanza un umbral de apoyos definido (por ejemplo: 10,
+50 o 100 apoyos), el sistema activa una automatización mediante n8n.
+n8n detecta el evento y envía una notificación automática a un canal
+de Telegram del equipo coordinador informando el hito alcanzado.
+El mensaje solo incluye información no sensible: nombre de la causa,
+número de apoyos y fecha.
+
+PASO 6 — El ciudadano solicita la generación del documento PDF
+--------------------------------------------------------------
+Cuando el ciudadano creador considera que tiene suficientes apoyos,
+hace clic en el botón "Generar Petición". El sistema recopila la
+información de la causa y el listado de apoyos desde la base de datos
+y los organiza en una plantilla formal de petición ciudadana.
+
+PASO 7 — El sistema genera automáticamente el documento PDF
+--------------------------------------------------------------
+El backend procesa la plantilla y genera un archivo PDF con:
+  - Encabezado formal con nombre de la plataforma y fecha
+  - Título y descripción de la causa
+  - Número total de ciudadanos que apoyan la petición
+  - Fecha de creación y fecha de generación del documento
+El PDF se genera sin incluir datos personales individuales de los
+ciudadanos que apoyaron, respetando el principio de minimización de datos.
+
+PASO 8 — El PDF queda disponible para descarga y presentación
+--------------------------------------------------------------
+El sistema pone a disposición del ciudadano creador el archivo PDF
+generado. Este documento puede ser descargado y presentado ante
+autoridades municipales, organizaciones sociales, medios de
+comunicación o cualquier instancia que deba conocer la petición.
+El documento sirve como evidencia formal de la participación ciudadana.
+
+PASO 9 — El equipo coordinador da seguimiento a la causa
+--------------------------------------------------------------
+El equipo coordinador registra actualizaciones sobre el estado de la
+causa desde el panel de administración. Estos reportes de seguimiento
+son visibles para la comunidad, garantizando transparencia y trazabilidad
+sobre qué acciones se tomaron a raíz de la petición presentada.
+
+PASO 10 — La causa se cierra o se marca como resuelta
+--------------------------------------------------------------
+Cuando el problema fue atendido o la solicitud fue respondida, el
+coordinador cambia el estado de la causa a "cerrada" y registra
+un reporte final describiendo el resultado obtenido. La causa queda
+en el historial de la plataforma como registro del proceso ciudadano
+cumplido, fortaleciendo la memoria comunitaria y la rendición de cuentas.
+
+============================================================
+RESUMEN DEL FLUJO EN 3 CLICS:
+============================================================
+Clic 1: Crear la causa y registrarla en la plataforma.
+Clic 2: Recibir apoyos de la comunidad.
+Clic 3: Generar el documento PDF formal de la petición.

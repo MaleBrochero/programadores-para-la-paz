@@ -1,0 +1,105 @@
+MODELO DE DATOS - PETICIÓN EN 3 CLICS
+Semana 12 - Módulo 6
+Programadores para la Paz
+============================================================
+
+DESCRIPCIÓN GENERAL:
+Este modelo de datos soporta el sistema "Petición en 3 Clics", una
+plataforma de participación ciudadana donde los ciudadanos pueden crear
+causas comunitarias, recibir apoyos y generar documentos formales de
+petición ante autoridades u organizaciones competentes.
+
+============================================================
+ENTIDAD 1: Causa
+============================================================
+Nombre de la entidad: Causa
+
+Campos principales:
+- id              → Identificador único (número entero, clave primaria)
+- titulo          → Nombre breve y claro de la causa comunitaria
+- descripcion     → Explicación detallada del problema o solicitud ciudadana
+- categoria       → Clasificación: "salud", "infraestructura", "educación", etc.
+- estado          → Estado actual: "activa", "en_revision", "cerrada"
+- fecha_creacion  → Fecha y hora en que fue registrada la causa
+- fecha_cierre    → Fecha en que la causa fue resuelta o cerrada (puede ser null)
+
+Propósito:
+Almacenar las causas o peticiones ciudadanas que los miembros de la
+comunidad registran en la plataforma. Permite organizarlas por categoría,
+hacer seguimiento de su estado y consultar cuántos apoyos ha recibido
+cada una. Es la entidad central del sistema alrededor de la cual giran
+todos los demás procesos: apoyos, notificaciones y generación de PDF.
+
+------------------------------------------------------------
+Para qué sirve esta entidad:
+Representa cada petición o problema comunitario que un ciudadano quiere
+visibilizar y para el cual busca el respaldo de su comunidad. Sin la entidad
+Causa no habría nada que apoyar ni documento que generar.
+
+============================================================
+ENTIDAD 2: Apoyo
+============================================================
+Nombre de la entidad: Apoyo
+
+Campos principales:
+- id              → Identificador único (número entero, clave primaria)
+- causa_id        → Referencia a la causa que está siendo apoyada (clave foránea)
+- nombre          → Nombre o seudónimo del ciudadano que apoya (no cédula ni datos sensibles)
+- fecha           → Fecha y hora en que se registró el apoyo
+
+Propósito:
+Registrar el respaldo ciudadano a cada causa. Cada vez que un ciudadano
+hace clic en "Apoyar", se crea un nuevo registro en esta entidad vinculado
+a la causa correspondiente. Permite contar cuántas personas apoyan cada
+petición y garantiza que el sistema pueda mostrar el total de respaldos
+en tiempo real. Este conteo es el que finalmente aparece en el documento
+PDF generado como evidencia de la participación ciudadana.
+
+------------------------------------------------------------
+Para qué sirve esta entidad:
+Guarda el registro de quiénes han apoyado cada causa. Es la evidencia
+digital de la participación comunitaria y el insumo principal para
+determinar cuándo se genera el documento formal de petición.
+
+============================================================
+ENTIDAD 3: Documento_PDF
+============================================================
+Nombre de la entidad: Documento_PDF
+
+Campos principales:
+- id              → Identificador único (número entero, clave primaria)
+- causa_id        → Referencia a la causa para la que se generó el PDF (clave foránea)
+- fecha_generacion → Fecha y hora en que se generó el documento
+- total_apoyos    → Número total de apoyos contados al momento de generar el PDF
+- ruta_archivo    → Ruta o URL donde está almacenado el archivo PDF generado
+
+Propósito:
+Registrar cada documento PDF generado por la plataforma. Esto permite
+llevar un historial de los documentos formales emitidos, saber cuándo
+fueron generados y cuántos apoyos tenía la causa en ese momento. La
+ruta del archivo permite que el ciudadano pueda descargarlo en cualquier
+momento posterior a su generación.
+
+------------------------------------------------------------
+Para qué sirve esta entidad:
+Guarda el historial de documentos formales emitidos por el sistema.
+Garantiza que cada petición generada quede registrada y disponible
+para consulta y descarga futura, fortaleciendo la trazabilidad del proceso.
+
+============================================================
+RELACIONES ENTRE ENTIDADES:
+============================================================
+- Una Causa puede recibir muchos Apoyos           (relación 1 a muchos)
+- Una Causa puede tener muchos Documentos_PDF     (relación 1 a muchos)
+- Cada Apoyo pertenece a una sola Causa           (relación muchos a 1)
+- Cada Documento_PDF corresponde a una sola Causa (relación muchos a 1)
+
+============================================================
+DATO IMPORTANTE - MINIMIZACIÓN DE DATOS:
+============================================================
+En esta plataforma se aplica el principio de minimización de datos:
+- No se almacena número de cédula de los ciudadanos que apoyan.
+- No se almacenan teléfonos, direcciones ni correos en la entidad Apoyo.
+- Solo se registra el nombre o seudónimo y la fecha del apoyo.
+- El documento PDF no incluye datos personales individuales, solo
+  el conteo total de apoyos, para proteger la privacidad de la comunidad.

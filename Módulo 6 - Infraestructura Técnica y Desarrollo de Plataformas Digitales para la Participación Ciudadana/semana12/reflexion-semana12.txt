@@ -1,0 +1,30 @@
+REFLEXIÓN FINAL - SEMANA 12
+Módulo 6 - Programadores para la Paz
+============================================================
+
+A lo largo de este curso aprendí que la tecnología no es solo una herramienta
+técnica: es un puente entre las personas y sus derechos. Comprender cómo
+funciona un sistema completo, desde la base de datos hasta la generación de
+un documento PDF, me permitió ver cómo cada componente tiene un propósito
+real en la vida de una comunidad. El sistema "Petición en 3 Clics" es un
+ejemplo concreto de cómo con pocos recursos se puede crear algo significativo.
+
+Uno de los aprendizajes más importantes fue entender que la participación
+ciudadana necesita infraestructura digital sólida para ser efectiva. Sin
+una base de datos que guarde las causas y los apoyos, sin un backend que
+procese las solicitudes, sin automatizaciones que mantengan informado al
+equipo, todo queda en el papel. La tecnología bien implementada convierte
+una idea comunitaria en un proceso trazable, transparente y sostenible.
+
+También aprendí que construir plataformas para la ciudadanía implica una
+responsabilidad ética enorme. No basta con que el sistema funcione: debe
+funcionar protegiendo a las personas. El principio de minimización de datos,
+el cifrado de contraseñas, el control de accesos y la separación entre
+información pública e información sensible son decisiones que protegen
+a quienes confían en la plataforma para organizarse y alzar su voz.
+
+En conclusión, este curso me mostró que programar para la paz no es solo
+escribir código: es diseñar sistemas que respeten la dignidad de las personas,
+que fortalezcan la democracia desde lo comunitario y que pongan la tecnología
+al servicio de quienes más la necesitan. Cada línea de código bien escrita
+puede ser un acto de construcción de paz.
